@@ -1118,14 +1118,17 @@ public class MediaPlaybackService extends Service {
                 mPlayPos++;
             } else {
                 if (mPlayPos >= mPlayListLen - 1) {
+                    mPlayPos = 0;
                     // we're at the end of the list
                     if (mRepeatMode == REPEAT_NONE && !force) {
+                        // set up the first song to play
+                        stop(false);
+                        openCurrent();
+                        notifyChange(META_CHANGED);
                         // all done
                         gotoIdleState();
                         notifyChange(PLAYBACK_COMPLETE);
                         return;
-                    } else if (mRepeatMode == REPEAT_ALL || force) {
-                        mPlayPos = 0;
                     }
                 } else {
                     mPlayPos++;
