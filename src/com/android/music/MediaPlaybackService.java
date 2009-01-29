@@ -905,6 +905,11 @@ public class MediaPlaybackService extends Service {
      */
     public void play() {
         if (mPlayer.isInitialized()) {
+            // if we are at the end of the song, go to the next song first
+            if (mPlayer.position() >= mPlayer.duration() - 1) {
+                next(true);
+            }
+
             mPlayer.start();
             setForeground(true);
             mWasPlaying = true;
