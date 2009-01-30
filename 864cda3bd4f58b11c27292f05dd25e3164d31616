@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAB3///8M\u003d",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 908,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2009-01-30T18:27:59Z",
+      "side": 1,
+      "message": "It\u0027s a bit of an edge case, but this will do the wrong thing when you\u0027re paused at the end of a song in \"repeat one song\" mode, so you need to treat that case separately.",
+      "revId": "864cda3bd4f58b11c27292f05dd25e3164d31616",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
