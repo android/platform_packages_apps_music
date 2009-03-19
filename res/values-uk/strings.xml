@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="onesong">"1 композиція"</string>
+  <plurals name="Nsongs">
+    <item quantity="other">"Композицій: <xliff:g id="COUNT">%d</xliff:g>"</item>
+  </plurals>
+  <plurals name="Nsongscomp">
+    <item quantity="other">"<xliff:g id="COUNT_FOR_ARTIST_1">%d</xliff:g> із <xliff:g id="COUNT_FOR_ARTIST_2">%s</xliff:g> артистів"</item>
+  </plurals>
+  <plurals name="Nalbums">
+    <item quantity="one">"1 альбом"</item>
+    <item quantity="other">"Альбомів: <xliff:g id="COUNT">%d</xliff:g>"</item>
+  </plurals>
+    <string name="goto_start">"Бібліотека"</string>
+    <string name="goto_playback">"Відтворення"</string>
+    <string name="party_shuffle">"Вечірка"</string>
+    <string name="party_shuffle_off">"Режим вечірки вимкнено"</string>
+    <string name="delete_item">"Видалити"</string>
+    <string name="shuffle_all">"Перемішати всі"</string>
+    <string name="play_all">"Відтворити всі"</string>
+    <string name="delete_artist_desc">"Всі композиції артиста <xliff:g id="ARTIST">%s</xliff:g> будуть видалені з карти SD."</string>
+    <string name="delete_album_desc">"Весь альбом \"<xliff:g id="ALBUM">%s</xliff:g>\" буде видалений з карти SD."</string>
+    <string name="delete_song_desc">"Композиція \"<xliff:g id="SONG">%s</xliff:g>\" буде видалена з карти SD."</string>
+    <string name="delete_confirm_button_text">"ОК"</string>
+  <plurals name="NNNtracksdeleted">
+    <item quantity="one">"1 композиція була видалена."</item>
+    <item quantity="other">"Композиції (<xliff:g id="SONGS_TO_DELETE">%d</xliff:g>) були видалені."</item>
+  </plurals>
+    <string name="scanning">"Сканування карти SD…"</string>
+    <string name="nowplaying_title">"Відтворюється"</string>
+    <string name="partyshuffle_title">"Вечірка"</string>
+    <string name="artists_title">"Виконавці"</string>
+    <string name="albums_menu">"Альбоми"</string>
+    <string name="albums_title">"Альбоми"</string>
+    <string name="tracks_menu">"Композиції"</string>
+    <string name="tracks_title">"Композиції"</string>
+    <string name="playlists_menu">"Плейлісти"</string>
+    <string name="playlists_title">"Плейлісти"</string>
+    <string name="videos_title">"Відео"</string>
+    <string name="all_title">"Увесь мультимедійний вміст"</string>
+    <string name="browse_menu">"Виконавці"</string>
+    <string name="search_title">"Поиск"</string>
+    <string name="no_tracks_title">"Немає виконавців"</string>
+    <string name="no_videos_title">"Немає відео"</string>
+    <string name="no_playlists_title">"Немає плейлістів"</string>
+    <string name="delete_playlist_menu">"Видалити"</string>
+    <string name="edit_playlist_menu">"Змінити"</string>
+    <string name="rename_playlist_menu">"Переіменувати"</string>
+    <string name="playlist_deleted_message">"Плейліст видалено."</string>
+    <string name="playlist_renamed_message">"Плейліст переіменовано."</string>
+    <string name="recentlyadded">"Недавно добавлені"</string>
+	<string name="recentlyadded_title">"Недавно добавлені"</string>
+    <string name="podcasts_listitem">"Підкасти"</string>
+    <string name="podcasts_title">"Підкасти"</string>
+    <string name="sdcard_missing_title">"Немає карти SD"</string>
+    <string name="sdcard_missing_message">"В телефоні не встановлена карта SD."</string>
+    <string name="sdcard_busy_title">"Карта SD недоступна"</string>
+    <string name="sdcard_busy_message">"На жаль, карта SD зайнята."</string>
+    <string name="sdcard_error_title">"Помилка карти SD"</string>
+    <string name="sdcard_error_message">"Помилка доступу до карти SD."</string>
+    <string name="unknown_artist_name">"Невідомий виконавець"</string>
+    <string name="unknown_album_name">"Невідомий альбом"</string>
+    <string name="shuffle_on_notif">"Перемішування увімкнено."</string>
+    <string name="shuffle_off_notif">"Перемішування вимкнено."</string>
+    <string name="repeat_off_notif">"Повторення вимкнено."</string>
+    <string name="repeat_current_notif">"Повторення поточної композиції."</string>
+    <string name="repeat_all_notif">"Повторення всіх композиції."</string>
+    <string name="ringtone_menu">"Використати як мелодію дзвінка телефону"</string>
+    <string name="ringtone_menu_short">"Використати як мелодію дзвінка"</string>
+    <string name="ringtone_set">"Встановлена мелодія дзвінка телефону: \"%s\"."</string>
+    <string name="play_selection">"Відтворити"</string>
+    <string name="add_to_playlist">"Добавити в плейліст"</string>
+    <string name="queue">"Поточний плейліст"</string>
+    <string name="new_playlist">"Створити"</string>
+    <string name="new_playlist_name_template">"Новий плейліст <xliff:g id="NUMBER">%d</xliff:g>"</string>
+  <plurals name="NNNtrackstoplaylist">
+    <item quantity="one">"1 композиція добавлена в плейліст."</item>
+    <item quantity="other">"Композиції (%d) добавлені в плейліст."</item>
+  </plurals>
+    <string name="emptyplaylist">"Вибраний плейліст порожній."</string>
+    <string name="create_playlist_create_text">"Зберегти"</string>
+    <string name="create_playlist_overwrite_text">"Перезаписати"</string>
+    <string name="service_start_error_title">"Проблема з відтворюванням"</string>
+    <string name="service_start_error_msg">"На жаль, відтворити композицію не вдалося."</string>
+    <string name="service_start_error_button">"ОК"</string>
+  <string-array name="weeklist">
+    <item>"1 тиждень"</item>
+    <item>"2 тижні"</item>
+    <item>"3 тижні"</item>
+    <item>"4 тижні"</item>
+    <item>"5 тижнів"</item>
+    <item>"6 тижнів"</item>
+    <item>"7 тижнів"</item>
+    <item>"8 тижнів"</item>
+    <item>"9 тижнів"</item>
+    <item>"10 тижнів"</item>
+    <item>"11 тижнів"</item>
+    <item>"12 тижнів"</item>
+  </string-array>
+    <string name="weekpicker_set">"Готово"</string>
+    <string name="weekpicker_title">"Вибір часу"</string>
+    <string name="save_as_playlist">"Зберегти як плейліст"</string>
+    <string name="clear_playlist">"Очистити плейліст"</string>
+    <string name="musicbrowserlabel">"Музика"</string>
+    <string name="musicshortcutlabel">"Музичний плейліст"</string>
+    <string name="mediaplaybacklabel">"Музика"</string>
+    <string name="videobrowserlabel">"Відео"</string>
+    <string name="mediapickerlabel">"Музика"</string>
+    <string name="playback_failed">"Вибачте, програвач не підтримує цей тип аудіофайлів."</string>
+    <string name="cancel">"Відмінити"</string>
+    <string name="remove_from_playlist">"Видалити з плейлісту"</string>
+    <string name="streamloadingtext">"Відбувається підключення до хосту <xliff:g id="HOST">%s</xliff:g>"</string>
+    <string name="mediasearch">"Пошук %s за допомогою:"</string>
+    <string name="working_artists">"Виконавці…"</string>
+    <string name="working_albums">"Альбоми…"</string>
+    <string name="working_songs">"Композиції…"</string>
+    <string name="working_playlists">"Плейлісти..."</string>
+    <string name="loading">"Відбувається завантаження"</string>
+    <string name="sort_by_track">"Дорожки"</string>
+    <string name="sort_by_album">"Альбоми"</string>
+    <string name="sort_by_artist">"Виконавці"</string>
+    <string name="music_picker_title">"Обрати музичну дорожку"</string>
+    <string name="gadget_track">"Трек <xliff:g id="TRACK_NUMBER">%d</xliff:g>"</string>
+</resources>
