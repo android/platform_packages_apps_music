@@ -20,7 +20,7 @@
     <item quantity="other">"Композицій: <xliff:g id="COUNT">%d</xliff:g>"</item>
   </plurals>
   <plurals name="Nsongscomp">
-    <item quantity="other">"<xliff:g id="COUNT_FOR_ARTIST_1">%d</xliff:g> із <xliff:g id="COUNT_FOR_ARTIST_2">%s</xliff:g> артистів"</item>
+    <item quantity="other">"<xliff:g id="COUNT_FOR_ARTIST">%2$d</xliff:g> із <xliff:g id="COUNT_FOR_ARTIST_2">%s</xliff:g> виконавців"</item>
   </plurals>
   <plurals name="Nalbums">
     <item quantity="one">"1 альбом"</item>
@@ -33,8 +33,8 @@
     <string name="delete_item">"Видалити"</string>
     <string name="shuffle_all">"Перемішати всі"</string>
     <string name="play_all">"Відтворити всі"</string>
-    <string name="delete_artist_desc">"Всі композиції артиста <xliff:g id="ARTIST">%s</xliff:g> будуть видалені з карти SD."</string>
-    <string name="delete_album_desc">"Весь альбом \"<xliff:g id="ALBUM">%s</xliff:g>\" буде видалений з карти SD."</string>
+    <string name="delete_artist_desc">"Всі композиції виконавця <xliff:g id="ARTIST">%s</xliff:g> будуть видалені з карти SD."</string>
+    <string name="delete_album_desc">"Весь альбом \"<xliff:g id="ALBUM">%s</xliff:g>\" буде видалено з карти SD."</string>
     <string name="delete_song_desc">"Композиція \"<xliff:g id="SONG">%s</xliff:g>\" буде видалена з карти SD."</string>
     <string name="delete_confirm_button_text">"ОК"</string>
   <plurals name="NNNtracksdeleted">
@@ -54,7 +54,7 @@
     <string name="videos_title">"Відео"</string>
     <string name="all_title">"Увесь мультимедійний вміст"</string>
     <string name="browse_menu">"Виконавці"</string>
-    <string name="search_title">"Поиск"</string>
+    <string name="search_title">"Пошук"</string>
     <string name="no_tracks_title">"Немає виконавців"</string>
     <string name="no_videos_title">"Немає відео"</string>
     <string name="no_playlists_title">"Немає плейлістів"</string>
@@ -63,8 +63,8 @@
     <string name="rename_playlist_menu">"Переіменувати"</string>
     <string name="playlist_deleted_message">"Плейліст видалено."</string>
     <string name="playlist_renamed_message">"Плейліст переіменовано."</string>
-    <string name="recentlyadded">"Недавно добавлені"</string>
-	<string name="recentlyadded_title">"Недавно добавлені"</string>
+    <string name="recentlyadded">"Недавно додані"</string>
+	<string name="recentlyadded_title">"Недавно додані"</string>
     <string name="podcasts_listitem">"Підкасти"</string>
     <string name="podcasts_title">"Підкасти"</string>
     <string name="sdcard_missing_title">"Немає карти SD"</string>
@@ -89,8 +89,8 @@
     <string name="new_playlist">"Створити"</string>
     <string name="new_playlist_name_template">"Новий плейліст <xliff:g id="NUMBER">%d</xliff:g>"</string>
   <plurals name="NNNtrackstoplaylist">
-    <item quantity="one">"1 композиція добавлена в плейліст."</item>
-    <item quantity="other">"Композиції (%d) добавлені в плейліст."</item>
+    <item quantity="one">"1 композиція додана в плейліст."</item>
+    <item quantity="other">"Композиції (%d) додані в плейліст."</item>
   </plurals>
     <string name="emptyplaylist">"Вибраний плейліст порожній."</string>
     <string name="create_playlist_create_text">"Зберегти"</string>
