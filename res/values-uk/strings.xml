@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <string name="onesong">1 song</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <plurals name="Nsongs">
+        <item quantity="other">"Композицій: <xliff:g id="count">%d</xliff:g>"</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <plurals name="Nsongscomp">
+        <item quantity="other">"<xliff:g id="count_for_artist">%2$d</xliff:g> з <xliff:g id="total_count">1$d</xliff:g> виконавців"</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">"1 альбом"</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">"Альбомів: <xliff:g id="count">%d</xliff:g>"</item>
+    </plurals>
+    
+    <!--
+    This string is used as the format string in a String.format call,
+    and 5 additional arguments are available for printing:
+    1 - hours
+    2 - minutes
+    3 - minutes%60
+    4 - seconds
+    5 - second%60
+    -->
+    <skip/>
+    <!-- Do not translate. Duration format. -->
+    <string name="durationformat"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <string name="goto_start">"Бібліотека"</string>
+    <!-- Menu item that takes the user to the "now playing" screen of the music player -->
+    <string name="goto_playback">"Відтворення"</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <string name="party_shuffle">"Вечірка"</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <string name="party_shuffle_off">"Режим вечірки вимкнено"</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <string name="delete_item">"Видалити"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in shuffle mode -->
+    <string name="shuffle_all">"Перемішати усі"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <string name="play_all">"Відтворити усі"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <string name="delete_artist_desc">"Всі композиції виконавця <xliff:g id="artist">%s</xliff:g> будуть видалені з SD-карти."</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <string name="delete_album_desc">"Весь альбом \"<xliff:g id="album">%s</xliff:g>\" буде видалено з SD-карти."</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <string name="delete_song_desc">"Композиція \"<xliff:g id="song">%s</xliff:g>\" буде видалена з SD-карти."</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <string name="delete_confirm_button_text">OK</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">"1 композиція була видалена."</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">"(<xliff:g id="songs_to_delete">%d</xliff:g>) композиції було видалені."</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <string name="scanning">"Сканування SD-карти\u2026"</string>
+
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <string name="nowplaying_title">"Відтворюється"</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <string name="partyshuffle_title">"Вечірка"</string>
+    <!-- Artist screen title -->
+    <string name="artists_title">"Виконавці"</string>
+    <!-- Category label on Library screen -->
+    <string name="albums_menu">"Альбоми"</string>
+    <!-- Albums screen title -->
+    <string name="albums_title">"Альбоми"</string>
+    <!-- Category label on Library screen -->
+    <string name="tracks_menu">"Композиції"</string>
+    <!-- Songs screen title -->
+    <string name="tracks_title">"Композиції"</string>
+    <!-- Category label on Library screen -->
+    <string name="playlists_menu">"Списки відтворення"</string>
+    <!-- Playlists screen title -->
+    <string name="playlists_title">"Списки відтворення"</string>
+    <!-- Videos screen title -->
+    <string name="videos_title">"Відео"</string>
+    <!-- All media screen title -->
+    <string name="all_title">"Увесь мультимедійний вміст"</string>
+    <!-- Category label on Library screen -->
+    <string name="browse_menu">"Виконавці"</string>
+    <!-- Library screen, menu item -->
+    <string name="search_title">"Пошук"</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <string name="no_tracks_title">"Немає виконавців"</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <string name="no_videos_title">"Немає відео"</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <string name="no_playlists_title">"Немає списків відтворення"</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <string name="delete_playlist_menu">"Видалити"</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <string name="edit_playlist_menu">"Редагувати"</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <string name="rename_playlist_menu">"Перейменувати"</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <string name="playlist_deleted_message">"Список відтворення видалено."</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="playlist_renamed_message">"Список відтворення перейменовано."</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <string name="recentlyadded">"Недавно додані"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <string name="recentlyadded_title">"Недавно додані"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <string name="podcasts_listitem">"Подкасти"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <string name="podcasts_title">"Подкасти"</string>
+    <!-- Title of screen when no sd card is present -->
+    <string name="sdcard_missing_title">"Немає SD-карти"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <string name="sdcard_missing_message">"В телефоні відсутня SD-карта."</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <string name="sdcard_busy_title">"SD-карта недоступна"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <string name="sdcard_busy_message">"На жаль, SD-карта зайнята."</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <string name="sdcard_error_title">"Помилка SD-карти"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <string name="sdcard_error_message">"Помилка доступу до SD-карти."</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <string name="unknown_artist_name">"Невідомий виконавець"</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <string name="unknown_album_name">"Невідомий альбом"</string>
+    <!-- Toast after turning shuffle on -->
+    <string name="shuffle_on_notif">"Перемішування увімкнено."</string>
+    <!-- Toast after turning shuffle off -->
+    <string name="shuffle_off_notif">"Перемішування вимкнено."</string>
+    <!-- Toast after turning repeat off -->
+    <string name="repeat_off_notif">"Повторення вимкнено."</string>
+    <!-- Toast after turning single repeat on -->
+    <string name="repeat_current_notif">"Повторення поточної композиції."</string>
+    <!-- Toast after turning repeat all on -->
+    <string name="repeat_all_notif">"Повторення усіх композицій."</string>
+    <!-- Individual song context menu item -->
+    <string name="ringtone_menu">"Використати як мелодію дзвінка телефону"</string>
+    <!-- Menu item -->
+    <string name="ringtone_menu_short">"Використати як мелодію дзвінка"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <string name="ringtone_set">"\"%s\" встановлено як мелодію дзвінка телефону."</string>
+    <!-- Context menu item -->
+    <string name="play_selection">"Відтворити"</string>
+    <!-- Context menu item -->
+    <string name="add_to_playlist">"Додати в список відтворення"</string>
+    <!-- Context menu item -->
+    <string name="queue">"Поточний список відтворення"</string>
+    <!-- Context menu item -->
+    <string name="new_playlist">"Новий"</string>
+    <!-- Template for newly created playlist name -->
+    <string name="new_playlist_name_template">"Новий список відтворення <xliff:g id="number">%d</xliff:g>"</string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">"1 композиція додана в список відтворення."</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">"%d композицій додані в список відтворення."</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <string name="emptyplaylist">"Вибраний список відтворення порожній."</string>
+    <!-- Button name when saving a playlist -->
+    <string name="create_playlist_create_text">"Зберегти"</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <string name="create_playlist_overwrite_text">"Перезаписати"</string>
+    <!-- Dialog box title -->
+    <string name="service_start_error_title">"Проблема з відтворенням"</string>
+    <!-- Dialog box message -->
+    <string name="service_start_error_msg">"На жаль, відтворити композицію не вдалося."</string>
+    <!-- Dialog box button -->
+    <string name="service_start_error_button">OK</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <string-array name="weeklist">
+        <item>"1 тиждень"</item>
+        <item>"2 тижні"</item>
+        <item>"3 тижні"</item>
+        <item>"4 тижні"</item>
+        <item>"5 тижнів"</item>
+        <item>"6 тижнів"</item>
+        <item>"7 тижнів"</item>
+        <item>"8 тижнів"</item>
+        <item>"9 тижнів"</item>
+        <item>"10 тижнів"</item>
+        <item>"11 тижнів"</item>
+        <item>"12 тижнів"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <string name="weekpicker_set">"Зроблено"</string>
+    <!-- Title of time span picker -->
+    <string name="weekpicker_title">"Встановлення часу"</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <string name="save_as_playlist">"Зберегти як список відтворення"</string>
+    <!-- menu item to clear the current playlist -->
+    <string name="clear_playlist">"Очистити список відтворення"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicbrowserlabel">"Музика"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicshortcutlabel">"Список відтворення музики"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediaplaybacklabel">"Музика"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="videobrowserlabel">"Відео"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediapickerlabel">"Музика"</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <string name="playback_failed">"Вибачте, програвач не підтримує даний тип аудіофайлів."</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <string name="cancel">"Відміна"</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <string name="remove_from_playlist">"Видалити зі списку відтворення"</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <string name="streamloadingtext">"Підключення до <xliff:g id="host">%s</xliff:g>"</string>
+
+    <!-- title of contextual music search menu -->
+    <string name="mediasearch">"Пошук %s за допомогою:"</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <string name="working_artists">"Виконавці\u2026"</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <string name="working_albums">"Альбоми\u2026"</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <string name="working_songs">"Композиції\u2026"</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <string name="working_playlists">"Списки відтворення\u2026"</string>
+    
+    <!-- Shown in the music picker while loading the music database. -->
+    <string name="loading">"Завантаження"</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <string name="sort_by_track">"Доріжки"</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <string name="sort_by_album">"Альбоми"</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <string name="sort_by_artist">"Виконавці"</string>
+    <!--  Title of the music picker activity. -->
+    <string name="music_picker_title">"Вибір музичної доріжки"</string>
+
+    <!-- Title for track number in music gadget -->
+    <string name="gadget_track">"Доріжка <xliff:g id="track_number">%d</xliff:g>"</string>
+</resources>
+
