@@ -30,6 +30,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.view.Window;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class StreamStarter extends Activity
 {
@@ -57,6 +58,7 @@ public class StreamStarter extends Activity
                 try {
                     IntentFilter f = new IntentFilter();
                     f.addAction(MediaPlaybackService.ASYNC_OPEN_COMPLETE);
+                    f.addAction(MediaPlaybackService.PLAYBACK_COMPLETE);
                     registerReceiver(mStatusListener, new IntentFilter(f));
                     MusicUtils.sService.openfileAsync(getIntent().getData().toString());
                 } catch (RemoteException ex) {
@@ -71,6 +73,15 @@ public class StreamStarter extends Activity
     private BroadcastReceiver mStatusListener = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if (action.equals(MediaPlaybackService.PLAYBACK_COMPLETE)) {
+                // You would come here only in case of a failure in the
+                // MediaPlayerService before PrepareAsync completes
+                Toast mt = Toast.makeText(StreamStarter.this, "Failed to play the requested stream..", 2000);
+                mt.show();
+                finish();
+                return;
+            }
             try {
                 MusicUtils.sService.play();
                 intent = new Intent("com.android.music.PLAYBACK_VIEWER");

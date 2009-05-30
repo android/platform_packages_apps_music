@@ -1702,6 +1702,7 @@ public class MediaPlaybackService extends Service {
  
         MediaPlayer.OnErrorListener errorListener = new MediaPlayer.OnErrorListener() {
             public boolean onError(MediaPlayer mp, int what, int extra) {
+                boolean status = false;
                 switch (what) {
                 case MediaPlayer.MEDIA_ERROR_SERVER_DIED:
                     mIsInitialized = false;
@@ -1712,11 +1713,14 @@ public class MediaPlaybackService extends Service {
                     mMediaPlayer = new MediaPlayer(); 
                     mMediaPlayer.setWakeMode(MediaPlaybackService.this, PowerManager.PARTIAL_WAKE_LOCK);
                     mHandler.sendMessageDelayed(mHandler.obtainMessage(SERVER_DIED), 2000);
-                    return true;
+                    status = true;
                 default:
+                    status = false;
                     break;
                 }
-                return false;
+                if (mOneShot)
+                    notifyChange(PLAYBACK_COMPLETE);
+                return status;
            }
         };
 
