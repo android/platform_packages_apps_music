@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAVX///2U\u003d",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1722,
+      "author": {
+        "id": 1001446
+      },
+      "writtenOn": "2009-06-01T22:13:23Z",
+      "side": 1,
+      "message": "You are right. This is not needed. I shall revert this.",
+      "revId": "5866cb2dd1cfb4b73d7a2852124054cbe1281b8c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAVX///3A\u003d",
         "filename": "src/com/android/music/StreamStarter.java",
         "patchSetId": 2
@@ -30,6 +47,23 @@
       "writtenOn": "2009-06-01T17:03:49Z",
       "side": 1,
       "message": "If you\u0027re going to show a message, it should come from a resource so it can be localized.",
+      "revId": "5866cb2dd1cfb4b73d7a2852124054cbe1281b8c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAV3////o\u003d",
+        "filename": "src/com/android/music/StreamStarter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1001446
+      },
+      "writtenOn": "2009-06-01T22:13:23Z",
+      "side": 1,
+      "message": "Sure.",
       "revId": "5866cb2dd1cfb4b73d7a2852124054cbe1281b8c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
