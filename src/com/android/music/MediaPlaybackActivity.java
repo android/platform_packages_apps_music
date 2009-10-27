@@ -342,6 +342,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
             long now = SystemClock.elapsedRealtime();
             if ((now - mLastSeekEventTime) > 250) {
                 mLastSeekEventTime = now;
+                updateTrackInfo();
                 mPosOverride = mDuration * progress / 1000;
                 try {
                     mService.seek(mPosOverride);
@@ -907,6 +908,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                 } else {
                     mService.play();
                 }
+                updateTrackInfo();
                 refreshNow();
                 setPauseButtonImage();
             }
@@ -1126,7 +1128,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         try {
             long pos = mPosOverride < 0 ? mService.position() : mPosOverride;
             long remaining = 1000 - (pos % 1000);
-            if ((pos >= 0) && (mDuration > 0)) {
+            if ((pos >= 0) && (mService.duration() > 0)) {
                 mCurrentTime.setText(MusicUtils.makeTimeString(this, pos / 1000));
                 
                 if (mService.isPlaying()) {
@@ -1161,6 +1163,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                     break;
 
                 case REFRESH:
+                    updateTrackInfo();
                     long next = refreshNow();
                     queueNextRefresh(next);
                     break;
