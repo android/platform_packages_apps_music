@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA0n//+Gs\u003d",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1170,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-07-12T21:57:24Z",
+      "side": 1,
+      "message": "Why do you call mService.duration() here, but use the previously cached mDuration a few lines down?\nEven if mDuration is inaccurate, it should be good enough to distinguish between zero and non zero, so there doesn\u0027t seem to be a need to actually call the service here.",
+      "revId": "55f06f778cce35fee129296e2842d390b26090b3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
