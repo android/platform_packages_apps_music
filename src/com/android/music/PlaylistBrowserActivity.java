@@ -189,7 +189,8 @@ public class PlaylistBrowserActivity extends ListActivity
         // instead of closing the cursor directly keeps the framework from accessing
         // the closed cursor later.
         if (!mAdapterSent && mAdapter != null) {
-            mAdapter.changeCursor(null);
+            // close the cursor if we didn't send it to another activity, to avoid cursor leaks
+            mAdapter.changeCursor(mAdapter.getCursor());
         }
         // Because we pass the adapter to the next activity, we need to make
         // sure it doesn't keep a reference to this activity. We can do this
