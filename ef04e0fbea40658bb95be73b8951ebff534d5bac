@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA73///sk\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-06T15:47:08Z",
+      "side": 1,
+      "message": "I am not convinced this is necessary, see below.",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA73///sg\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 646,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-06T15:47:08Z",
+      "side": 1,
+      "message": "I am guessing you are trying to force the code to go through this path, however...",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA73///sc\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-06T15:47:08Z",
+      "side": 1,
+      "message": "the existing code (prior to your change) will end up here, and super.changeCursor() will then close the previous cursor.",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
