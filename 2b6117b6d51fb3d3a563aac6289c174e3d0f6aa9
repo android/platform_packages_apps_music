@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA73///sU\u003d",
+        "filename": "src/com/android/music/VideoBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-06T15:50:44Z",
+      "side": 1,
+      "message": "Android coding style says this brace should go on the line above.\n(I realize not all methods in this file do it right, but new code should do it right)",
+      "revId": "2b6117b6d51fb3d3a563aac6289c174e3d0f6aa9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
