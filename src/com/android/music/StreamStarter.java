@@ -30,6 +30,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
+import android.util.Log;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -114,7 +115,11 @@ public class StreamStarter extends Activity
             } catch (RemoteException ex) {
             }
         }
-        unregisterReceiver(mStatusListener);
+        try {
+            unregisterReceiver(mStatusListener);
+        } catch (IllegalArgumentException e) {
+            Log.e("StreamStarter", "onPause can't unregister receiver " + e.toString());
+        }
         MusicUtils.unbindFromService(mToken);
         super.onPause();
     }
