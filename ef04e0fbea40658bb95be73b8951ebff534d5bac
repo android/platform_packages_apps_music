@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "AAAA73///nE\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 646,
+      "author": {
+        "id": 1004508
+      },
+      "writtenOn": "2010-10-07T06:23:55Z",
+      "side": 1,
+      "message": "Yes, this loop was never hit, since when activity is finishing cursor is always null. Also my idea was to close the cursor when its not passed to another activity.",
+      "parentUuid": "AAAA73///sg\u003d",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAA73///sc\u003d",
         "filename": "src/com/android/music/AlbumBrowserActivity.java",
         "patchSetId": 1
@@ -47,6 +65,24 @@
       "writtenOn": "2010-10-06T15:47:08Z",
       "side": 1,
       "message": "the existing code (prior to your change) will end up here, and super.changeCursor() will then close the previous cursor.",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA73///nA\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1004508
+      },
+      "writtenOn": "2010-10-07T06:23:55Z",
+      "side": 1,
+      "message": "Yes, this closes the previous cursor, but still I see cursor leaks when test Music app on emulator. I have updated the scenario to reproduce this issue.",
+      "parentUuid": "AAAA73///sc\u003d",
       "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
