@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "AAAA73///kI\u003d",
+        "filename": "src/com/android/music/AlbumBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 646,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-07T15:49:38Z",
+      "side": 1,
+      "message": "What loop are you referring to? There is no loop here.",
+      "parentUuid": "AAAA73///nE\u003d",
+      "revId": "ef04e0fbea40658bb95be73b8951ebff534d5bac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAA73///sc\u003d",
         "filename": "src/com/android/music/AlbumBrowserActivity.java",
         "patchSetId": 1
