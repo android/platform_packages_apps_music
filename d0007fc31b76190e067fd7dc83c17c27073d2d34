@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA8H//+S0\u003d",
+        "filename": "src/com/android/music/PlaylistBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2010-10-27T17:07:15Z",
+      "side": 1,
+      "message": "If some apps don\u0027t add any extras, it seems plausible that some might add different extras, i.e. getString(\"playlist\") could return null. Should probably add a check for that too.",
+      "revId": "d0007fc31b76190e067fd7dc83c17c27073d2d34",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
