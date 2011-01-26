@@ -362,32 +362,50 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         return true;
     }
 
+    // There are two scenarios that can trigger the seekbar listener to trigger:
+    //
+    // The first is the user using the touchpad to adjust the posititon of the
+    // seekbar's thumb. In this case onStartTrackingTouch is called followed by
+    // a number of onProgressChanged notifications, concluded by onStopTrackingTouch.
+    // We're setting the field "mFromTouch" to true for the duration of the dragging
+    // session to avoid jumps in the position in case of ongoing playback.
+    //
+    // The second scenario involves the user operating the scroll ball, in this
+    // case there WON'T BE onStartTrackingTouch/onStopTrackingTouch notifications,
+    // we will simply apply the updated position without suspending regular updates.
+
     private OnSeekBarChangeListener mSeekListener = new OnSeekBarChangeListener() {
         public void onStartTrackingTouch(SeekBar bar) {
             mLastSeekEventTime = 0;
             mFromTouch = true;
+
+            // By removing these pending progress messages we make sure
+            // that a) we won't update the progress while the user adjusts
+            // the seekbar and b) once the user is done dragging the thumb
+            // we will post one of these messages to the queue again and
+            // this ensures that there will be exactly one message queued up.
+            mHandler.removeMessages(REFRESH);
         }
         public void onProgressChanged(SeekBar bar, int progress, boolean fromuser) {
             if (!fromuser || (mService == null)) return;
-            long now = SystemClock.elapsedRealtime();
-            if ((now - mLastSeekEventTime) > 250) {
-                mLastSeekEventTime = now;
-                mPosOverride = mDuration * progress / 1000;
-                try {
-                    mService.seek(mPosOverride);
-                } catch (RemoteException ex) {
-                }
+            mPosOverride = mDuration * progress / 1000;
+            try {
+                mService.seek(mPosOverride);
+            } catch (RemoteException ex) {
+            }
 
-                // trackball event, allow progress updates
-                if (!mFromTouch) {
-                    refreshNow();
-                    mPosOverride = -1;
-                }
+            refreshNow();
+            // trackball event, allow progress updates
+            if (!mFromTouch) {
+                refreshNow();
+                mPosOverride = -1;
             }
         }
         public void onStopTrackingTouch(SeekBar bar) {
             mPosOverride = -1;
             mFromTouch = false;
+            // Ensure that progress is properly updated in the future,
+            mHandler.sendEmptyMessage(REFRESH);
         }
     };
     
@@ -1158,7 +1176,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
     private static final int ALBUM_ART_DECODED = 4;
 
     private void queueNextRefresh(long delay) {
-        if (!paused) {
+        if (!paused && !mFromTouch) {
             Message msg = mHandler.obtainMessage(REFRESH);
             mHandler.removeMessages(REFRESH);
             mHandler.sendMessageDelayed(msg, delay);
@@ -1178,8 +1196,14 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                     mCurrentTime.setVisibility(View.VISIBLE);
                 } else {
                     // blink the counter
-                    int vis = mCurrentTime.getVisibility();
-                    mCurrentTime.setVisibility(vis == View.INVISIBLE ? View.VISIBLE : View.INVISIBLE);
+                    // If the progress bar is still been dragged, then we do not want to blink the 
+                    // currentTime. It would cause flickering due to change in the visibility.
+                    if (mFromTouch) {
+                        mCurrentTime.setVisibility(View.VISIBLE); 
+                    } else {
+                        int vis = mCurrentTime.getVisibility();
+                        mCurrentTime.setVisibility(vis == View.INVISIBLE ? View.VISIBLE : View.INVISIBLE);
+                    }
                     remaining = 500;
                 }
 
