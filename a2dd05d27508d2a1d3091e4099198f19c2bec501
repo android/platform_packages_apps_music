@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA+3//65M\u003d",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1199,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2011-01-31T18:30:22Z",
+      "side": 1,
+      "message": "If you get a chance, please remove the trailing space",
+      "revId": "a2dd05d27508d2a1d3091e4099198f19c2bec501",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA+3//65I\u003d",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1202,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2011-01-31T18:30:22Z",
+      "side": 1,
+      "message": "Same here, trailing space.",
+      "revId": "a2dd05d27508d2a1d3091e4099198f19c2bec501",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
