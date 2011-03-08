@@ -955,6 +955,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         try {
             if(mService != null) {
                 if (mService.isPlaying()) {
+                    MediaPlaybackService.mPausedByTransientLossOfFocus = false;
                     mService.pause();
                 } else {
                     mService.play();

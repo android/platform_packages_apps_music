@@ -138,7 +138,7 @@ public class MediaPlaybackService extends Service {
     private AudioManager mAudioManager;
     private boolean mQueueIsSaveable = true;
     // used to track what type of audio focus loss caused the playback to pause
-    private boolean mPausedByTransientLossOfFocus = false;
+    public static boolean mPausedByTransientLossOfFocus = false;
 
     private SharedPreferences mPreferences;
     // We use this to distinguish between different cards when saving/restoring playlists.
