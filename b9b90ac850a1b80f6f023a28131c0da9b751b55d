@@ -1,0 +1,8 @@
+Change-Id: Ib9b90ac850a1b80f6f023a28131c0da9b751b55d
+Code-Review+2: Jean-Baptiste Queru <jbq@google.com>
+Verified+1: Jean-Baptiste Queru <jbq@google.com>
+Submitted-by: Jean-Baptiste Queru <jbq@google.com>
+Submitted-at: Wed, 18 Mar 2009 13:57:39 -0700
+Reviewed-on: https://review.source.android.com/9190
+Project: platform/packages/apps/Music
+Branch: refs/heads/master

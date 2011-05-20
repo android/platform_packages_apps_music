@@ -1,0 +1,9 @@
+Change-Id: I6cba06a21ab52b3307bf6f9622854efdd9f05cf0
+Code-Review+2: Jean-Baptiste Queru <jbq@google.com>
+Verified+1: Jean-Baptiste Queru <jbq@google.com>
+Code-Review+2: Marco Nelissen <marcone@google.com>
+Submitted-by: Jean-Baptiste Queru <jbq@google.com>
+Submitted-at: Thu, 29 Apr 2010 09:15:02 -0700
+Reviewed-on: https://review.source.android.com/14507
+Project: platform/packages/apps/Music
+Branch: refs/heads/master

@@ -1,0 +1,8 @@
+Change-Id: Ib12ed321aa4a53e32d6e5d4ec7297a31d9afab13
+Code-Review+2: Marco Nelissen <marcone@google.com>
+Verified+1: Marco Nelissen <marcone@google.com>
+Submitted-by: Marco Nelissen <marcone@google.com>
+Submitted-at: Thu, 04 Jun 2009 10:37:34 -0700
+Reviewed-on: https://review.source.android.com/10161
+Project: platform/packages/apps/Music
+Branch: refs/heads/master
