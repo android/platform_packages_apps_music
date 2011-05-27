@@ -458,9 +458,17 @@ public class MediaPlaybackService extends Service {
             }
         }
         ed.putInt("curpos", mPlayPos);
-        if (mPlayer.isInitialized()) {
+        //After MusicPlaybackService receives an "Intent.ACTION_MEDIA_EJECT" intent
+        //after unMount sdcard, it calls saveQueue() to backup some resources.
+        //In this case, if onDestroy() be called, mPlayer will be set to null. So we
+        //need check if mPlayer is null before call mPlayer.isInitialized(), or
+        //force close may happens.
+        if (mPlayer == null ) {
+            ed.putLong("seekpos", 0);
+        } else if (mPlayer.isInitialized()) {
             ed.putLong("seekpos", mPlayer.position());
         }
+        //end.
         ed.putInt("repeatmode", mRepeatMode);
         ed.putInt("shufflemode", mShuffleMode);
         SharedPreferencesCompat.apply(ed);
