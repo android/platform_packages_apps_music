@@ -369,25 +369,22 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         }
         public void onProgressChanged(SeekBar bar, int progress, boolean fromuser) {
             if (!fromuser || (mService == null)) return;
-            long now = SystemClock.elapsedRealtime();
-            if ((now - mLastSeekEventTime) > 250) {
-                mLastSeekEventTime = now;
+            // trackball event, allow progress updates
+            if (!mFromTouch) {
+                mPosOverride = -1;
+            } else {
                 mPosOverride = mDuration * progress / 1000;
-                try {
-                    mService.seek(mPosOverride);
-                } catch (RemoteException ex) {
-                }
-
-                // trackball event, allow progress updates
-                if (!mFromTouch) {
-                    refreshNow();
-                    mPosOverride = -1;
-                }
             }
         }
         public void onStopTrackingTouch(SeekBar bar) {
             mPosOverride = -1;
             mFromTouch = false;
+            int progress = bar.getProgress();
+            long position = mDuration * progress / 1000;
+            try {
+                if (mService != null) mService.seek(position);
+            } catch (RemoteException e) {
+            }
         }
     };
     
