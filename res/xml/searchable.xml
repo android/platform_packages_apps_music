@@ -19,6 +19,7 @@
     android:hint="@string/search_hint"
     android:includeInGlobalSearch="true"
 
+    android:imeOptions="actionSearch|flagNoExtractUi"
     android:searchSuggestAuthority="media"
     android:searchSuggestPath="external/audio/search"
     android:searchSuggestThreshold="3"
