@@ -529,6 +529,10 @@ public class TrackBrowserActivity extends ListActivity
                 getListView().invalidateViews();
                 mDeletedOneRow = true;
             } else {
+                mTrackCursor.moveToPosition(from);
+                from = mTrackCursor.getInt(mTrackCursor.getColumnIndexOrThrow(MediaStore.Audio.Playlists.Members.PLAY_ORDER));
+                mTrackCursor.moveToPosition(to);
+                to = mTrackCursor.getInt(mTrackCursor.getColumnIndexOrThrow(MediaStore.Audio.Playlists.Members.PLAY_ORDER));
                 // update a saved playlist
                 MediaStore.Audio.Playlists.Members.moveItem(getContentResolver(),
                         Long.valueOf(mPlaylist), from, to);
