@@ -45,6 +45,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.SystemClock;
+import android.os.PowerManager;
 import android.provider.MediaStore;
 import android.text.Layout;
 import android.text.TextUtils.TruncateAt;
@@ -482,6 +483,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         IntentFilter f = new IntentFilter();
         f.addAction(MediaPlaybackService.PLAYSTATE_CHANGED);
         f.addAction(MediaPlaybackService.META_CHANGED);
+        f.addAction(Intent.ACTION_SCREEN_ON);
         registerReceiver(mStatusListener, new IntentFilter(f));
         updateTrackInfo();
         long next = refreshNow();
@@ -1161,7 +1163,11 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         if (!paused) {
             Message msg = mHandler.obtainMessage(REFRESH);
             mHandler.removeMessages(REFRESH);
-            mHandler.sendMessageDelayed(msg, delay);
+            //Post the refresh messgae only when the Screen is ON
+            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+            if (pm.isScreenOn()) {
+                mHandler.sendMessageDelayed(msg, delay);
+            }
         }
     }
 
@@ -1253,6 +1259,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                 queueNextRefresh(1);
             } else if (action.equals(MediaPlaybackService.PLAYSTATE_CHANGED)) {
                 setPauseButtonImage();
+            }
+            if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
+                queueNextRefresh(1);
             }
         }
     };
