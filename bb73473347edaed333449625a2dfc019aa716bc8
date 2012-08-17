@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAIf3///Is\u003d",
+        "filename": "src/com/android/music/AudioPreview.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2012-08-17T00:58:51Z",
+      "side": 1,
+      "message": "This is a no-op. You\u0027re creating an intent filter, and then not doing anything with it.",
+      "revId": "bb73473347edaed333449625a2dfc019aa716bc8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAIf3///Ik\u003d",
+        "filename": "src/com/android/music/AudioPreview.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2012-08-17T00:58:51Z",
+      "side": 1,
+      "message": "It would be better to get the PowerManager once on startup, rather than every time run() gets called. It might be even better to just set a flag in onPause()",
+      "revId": "bb73473347edaed333449625a2dfc019aa716bc8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
