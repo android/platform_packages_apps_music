@@ -33,6 +33,24 @@
       "revId": "bb73473347edaed333449625a2dfc019aa716bc8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAIk3///74\u003d",
+        "filename": "src/com/android/music/AudioPreview.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2012-08-17T08:40:56Z",
+      "side": 1,
+      "message": "Yeah, this is silly.  isScreenOn() doesn\u0027t necessarily mean what you think it means.  (What if there were multiple screens?)\n\nYou should be stopping progress from onPause() instead.  The ActivityManager will take care of pausing activities when the device goes to sleep.",
+      "parentUuid": "AAAIf3///Ik\u003d",
+      "revId": "bb73473347edaed333449625a2dfc019aa716bc8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
