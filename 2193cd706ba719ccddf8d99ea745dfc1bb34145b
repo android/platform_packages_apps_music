@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAIk3///7w\u003d",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1168,
+      "author": {
+        "id": 1003957
+      },
+      "writtenOn": "2012-08-17T08:42:04Z",
+      "side": 1,
+      "message": "Don\u0027t do this.  Handling onPause() should be enough.",
+      "revId": "2193cd706ba719ccddf8d99ea745dfc1bb34145b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
