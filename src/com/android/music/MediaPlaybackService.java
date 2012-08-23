@@ -1327,7 +1327,8 @@ public class MediaPlaybackService extends Service {
      * assigned to mPlayPos;
      */
     private int getNextPosition(boolean force) {
-        if (mRepeatMode == REPEAT_CURRENT) {
+        //even at REPEAT_CURRENT mode, normally we wanna switch to next song when "next icon" pressed.
+        if (mRepeatMode == REPEAT_CURRENT && !force) {
             if (mPlayPos < 0) return 0;
             return mPlayPos;
         } else if (mShuffleMode == SHUFFLE_NORMAL) {
