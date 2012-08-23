@@ -1955,6 +1955,11 @@ public class MediaPlaybackService extends Service {
         
         public void pause() {
             mCurrentMediaPlayer.pause();
+            mCurrentMediaPlayer.setNextMediaPlayer(null);
+            if (mNextMediaPlayer != null) {
+                mNextMediaPlayer.release();
+                mNextMediaPlayer = null;
+            }
         }
         
         public void setHandler(Handler handler) {
