@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAI6X///wg\u003d",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 465,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2012-08-27T15:44:27Z",
+      "side": 1,
+      "message": "are you saying that SaveQueue is called from the broadcast receiver *after* onDestroy was called?",
+      "revId": "af1f48f431ff32ad71b9556143724cafcdc539a2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
