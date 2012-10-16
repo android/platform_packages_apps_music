@@ -1097,6 +1097,10 @@ public class MediaPlaybackService extends Service {
                 return false;
             }
             
+            if (mPlayer == null) {
+                return false;
+            }
+
             // if mCursor is null, try to associate path with a database cursor
             if (mCursor == null) {
 
