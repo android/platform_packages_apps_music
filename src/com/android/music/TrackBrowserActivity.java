@@ -1536,6 +1536,12 @@ public class TrackBrowserActivity extends ListActivity
                 cursor = null;
             }
             if (cursor != mActivity.mTrackCursor) {
+                // Release old cursor before changing to new cursor.
+                if (mActivity.mTrackCursor instanceof NowPlayingCursor) {
+                    mActivity.mTrackCursor.deactivate();
+                    mActivity.mTrackCursor.close();
+                    mActivity.mTrackCursor = null;
+                }
                 mActivity.mTrackCursor = cursor;
                 super.changeCursor(cursor);
                 getColumnIndices(cursor);
