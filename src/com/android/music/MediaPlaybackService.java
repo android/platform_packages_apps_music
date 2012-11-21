@@ -1700,6 +1700,9 @@ public class MediaPlaybackService extends Service {
      */
     public long getAudioId() {
         synchronized (this) {
+            if (mPlayer == null) {
+                return -1;
+            }
             if (mPlayPos >= 0 && mPlayer.isInitialized()) {
                 return mPlayList[mPlayPos];
             }
