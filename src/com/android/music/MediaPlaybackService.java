@@ -232,6 +232,8 @@ public class MediaPlaybackService extends Service {
                                 mPausedByTransientLossOfFocus = false;
                             }
                             pause();
+                            mAudioManager.unregisterMediaButtonEventReceiver(new ComponentName(getPackageName(),
+                                    MediaButtonIntentReceiver.class.getName()));
                             break;
                         case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
                             mMediaplayerHandler.removeMessages(FADEUP);
@@ -255,6 +257,8 @@ public class MediaPlaybackService extends Service {
                                 mMediaplayerHandler.removeMessages(FADEDOWN);
                                 mMediaplayerHandler.sendEmptyMessage(FADEUP);
                             }
+                            mAudioManager.registerMediaButtonEventReceiver(new ComponentName(getPackageName(),
+                                    MediaButtonIntentReceiver.class.getName()));
                             break;
                         default:
                             Log.e(LOGTAG, "Unknown audio focus change code");
