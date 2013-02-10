@@ -47,7 +47,7 @@
     <item quantity="one" msgid="8560276109508404217">"1 Titel wurde gelöscht."</item>
     <item quantity="other" msgid="5156740163031225200">"<xliff:g id="SONGS_TO_DELETE">%d</xliff:g> Titel wurden gelöscht."</item>
   </plurals>
-    <string name="scanning" msgid="3529383847223198502">"SD-Karte wird gelesenen..."</string>
+    <string name="scanning" msgid="3529383847223198502">"SD-Karte wird gelesen..."</string>
     <string name="scanning_nosdcard" msgid="8105284774487360148">"USB-Speicher wird gescannt..."</string>
     <string name="nowplaying_title" msgid="8342523844307751761">"Läuft gerade"</string>
     <string name="partyshuffle_title" msgid="6582413231529992125">"Party-Mix"</string>
@@ -96,7 +96,7 @@
     <string name="ringtone_menu" msgid="2737472190159134599">"Als Klingelton verwenden"</string>
     <string name="ringtone_menu_short" msgid="3367622038867238133">"Als Klingelton verwenden"</string>
     <string name="ringtone_set" msgid="5325818347613843130">"\"<xliff:g id="NAME">%s</xliff:g>\" wurde als Telefonklingelton festgelegt."</string>
-    <string name="play_selection" msgid="2854921021814550018">"Wiedergeben"</string>
+    <string name="play_selection" msgid="2854921021814550018">"Wiedergabe"</string>
     <string name="add_to_playlist" msgid="7110273488645072783">"Zu Playlist hinzufügen"</string>
     <string name="queue" msgid="2937629819482787704">"Aktuelle Playlist"</string>
     <string name="new_playlist" msgid="7588112979692632867">"Neu"</string>
