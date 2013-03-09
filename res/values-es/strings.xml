@@ -47,8 +47,8 @@
     <item quantity="one" msgid="8560276109508404217">"Se ha eliminado una canción."</item>
     <item quantity="other" msgid="5156740163031225200">"Se han eliminado <xliff:g id="SONGS_TO_DELETE">%d</xliff:g> canciones."</item>
   </plurals>
-    <string name="scanning" msgid="3529383847223198502">"Examinando tarjeta SD…"</string>
-    <string name="scanning_nosdcard" msgid="8105284774487360148">"Analizando almacenamiento USB…"</string>
+    <string name="scanning" msgid="3529383847223198502">"Examinando tarjeta SD\u2026"</string>
+    <string name="scanning_nosdcard" msgid="8105284774487360148">"Analizando almacenamiento USB\u2026"</string>
     <string name="nowplaying_title" msgid="8342523844307751761">"Reproduciendo"</string>
     <string name="partyshuffle_title" msgid="6582413231529992125">"Sesión aleatoria"</string>
     <string name="artists_title" msgid="8490372367259160067">"Artistas"</string>
@@ -137,13 +137,13 @@
     <string name="playback_failed" msgid="3811851150820251398">"El reproductor no admite este tipo de archivo de audio."</string>
     <string name="cancel" msgid="886559484711947520">"Cancelar"</string>
     <string name="remove_from_playlist" msgid="2548577514849026354">"Eliminar de la lista de reproducción"</string>
-    <string name="streamloadingtext" msgid="8842426517396356215">"Estableciendo conexión con <xliff:g id="HOST">%s</xliff:g>..."</string>
+    <string name="streamloadingtext" msgid="8842426517396356215">"Estableciendo conexión con <xliff:g id="HOST">%s</xliff:g>\u2026"</string>
     <string name="mediasearch" msgid="959222971261132292">"Buscar <xliff:g id="TERM">%s</xliff:g> con:"</string>
-    <string name="working_artists" msgid="8678357432732156580">"Artistas…"</string>
-    <string name="working_albums" msgid="8713273699401457426">"Álbumes…"</string>
-    <string name="working_songs" msgid="2201491972050410684">"Canciones…"</string>
-    <string name="working_playlists" msgid="4424950806134653351">"Listas de reproducción…"</string>
-    <string name="loading" msgid="1991660396037155453">"Cargando..."</string>
+    <string name="working_artists" msgid="8678357432732156580">"Artistas\u2026"</string>
+    <string name="working_albums" msgid="8713273699401457426">"Álbumes\u2026"</string>
+    <string name="working_songs" msgid="2201491972050410684">"Canciones\u2026"</string>
+    <string name="working_playlists" msgid="4424950806134653351">"Listas de reproducción\u2026"</string>
+    <string name="loading" msgid="1991660396037155453">"Cargando\u2026"</string>
     <string name="sort_by_track" msgid="7662999005554152565">"Pistas"</string>
     <string name="sort_by_album" msgid="2912837715658975248">"Álbumes"</string>
     <string name="sort_by_artist" msgid="4607024967813199992">"Artistas"</string>
