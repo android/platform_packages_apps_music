@@ -38,17 +38,17 @@
     <string name="play_all" msgid="6309622568869321842">"Reproducir todo"</string>
     <string name="delete_artist_desc" msgid="8665759524898379194">"¿Eliminar todas las canciones de <xliff:g id="ARTIST">%s</xliff:g> de la tarjeta SD de forma permanente?"</string>
     <string name="delete_artist_desc_nosdcard" msgid="5729059309796497914">"¿Eliminar todas las canciones de <xliff:g id="ARTIST">%s</xliff:g> del almacenamiento USB de forma permanente?"</string>
-    <string name="delete_album_desc" msgid="8172412873562794429">"¿Eliminar todo el álbum \"<xliff:g id="ALBUM">%s</xliff:g>\" de la tarjeta SD de forma permanente?"</string>
-    <string name="delete_album_desc_nosdcard" msgid="8612559166069885285">"¿Eliminar todo el álbum \"<xliff:g id="ALBUM">%s</xliff:g>\" del almacenamiento USB de forma permanente?"</string>
-    <string name="delete_song_desc" msgid="1842681623848282205">"¿Eliminar \"<xliff:g id="SONG">%s</xliff:g>\" de la tarjeta SD de forma permanente?"</string>
-    <string name="delete_song_desc_nosdcard" msgid="5064973032624148730">"¿Eliminar \"<xliff:g id="SONG">%s</xliff:g>\" del almacenamiento USB de forma permanente?"</string>
+    <string name="delete_album_desc" msgid="8172412873562794429">"¿Eliminar todo el álbum \u00AB<xliff:g id="ALBUM">%s</xliff:g>\u00BB de la tarjeta SD de forma permanente?"</string>
+    <string name="delete_album_desc_nosdcard" msgid="8612559166069885285">"¿Eliminar todo el álbum \u00AB<xliff:g id="ALBUM">%s</xliff:g>\u00BB del almacenamiento USB de forma permanente?"</string>
+    <string name="delete_song_desc" msgid="1842681623848282205">"¿Eliminar \u00AB<xliff:g id="SONG">%s</xliff:g>\u00BB de la tarjeta SD de forma permanente?"</string>
+    <string name="delete_song_desc_nosdcard" msgid="5064973032624148730">"¿Eliminar \u00AB<xliff:g id="SONG">%s</xliff:g>\u00BB del almacenamiento USB de forma permanente?"</string>
     <string name="delete_confirm_button_text" msgid="7008121194944357274">"Aceptar"</string>
   <plurals name="NNNtracksdeleted">
     <item quantity="one" msgid="8560276109508404217">"Se ha eliminado una canción."</item>
     <item quantity="other" msgid="5156740163031225200">"Se han eliminado <xliff:g id="SONGS_TO_DELETE">%d</xliff:g> canciones."</item>
   </plurals>
-    <string name="scanning" msgid="3529383847223198502">"Examinando tarjeta SD…"</string>
-    <string name="scanning_nosdcard" msgid="8105284774487360148">"Analizando almacenamiento USB…"</string>
+    <string name="scanning" msgid="3529383847223198502">"Examinando tarjeta SD\u2026"</string>
+    <string name="scanning_nosdcard" msgid="8105284774487360148">"Analizando almacenamiento USB\u2026"</string>
     <string name="nowplaying_title" msgid="8342523844307751761">"Reproduciendo"</string>
     <string name="partyshuffle_title" msgid="6582413231529992125">"Sesión aleatoria"</string>
     <string name="artists_title" msgid="8490372367259160067">"Artistas"</string>
@@ -95,7 +95,7 @@
     <string name="repeat_all_notif" msgid="6443293055987316642">"Se repetirán todas las canciones."</string>
     <string name="ringtone_menu" msgid="2737472190159134599">"Usar como tono"</string>
     <string name="ringtone_menu_short" msgid="3367622038867238133">"Usar como tono"</string>
-    <string name="ringtone_set" msgid="5325818347613843130">"Se ha establecido \"<xliff:g id="NAME">%s</xliff:g>\" como tono del teléfono."</string>
+    <string name="ringtone_set" msgid="5325818347613843130">"Se ha establecido \u00AB<xliff:g id="NAME">%s</xliff:g>\u00BB como tono del teléfono."</string>
     <string name="play_selection" msgid="2854921021814550018">"Reproducir"</string>
     <string name="add_to_playlist" msgid="7110273488645072783">"Añadir a lista"</string>
     <string name="queue" msgid="2937629819482787704">"Lista de reproducción actual"</string>
@@ -137,13 +137,13 @@
     <string name="playback_failed" msgid="3811851150820251398">"El reproductor no admite este tipo de archivo de audio."</string>
     <string name="cancel" msgid="886559484711947520">"Cancelar"</string>
     <string name="remove_from_playlist" msgid="2548577514849026354">"Eliminar de la lista de reproducción"</string>
-    <string name="streamloadingtext" msgid="8842426517396356215">"Estableciendo conexión con <xliff:g id="HOST">%s</xliff:g>..."</string>
+    <string name="streamloadingtext" msgid="8842426517396356215">"Estableciendo conexión con <xliff:g id="HOST">%s</xliff:g>\u2026"</string>
     <string name="mediasearch" msgid="959222971261132292">"Buscar <xliff:g id="TERM">%s</xliff:g> con:"</string>
-    <string name="working_artists" msgid="8678357432732156580">"Artistas…"</string>
-    <string name="working_albums" msgid="8713273699401457426">"Álbumes…"</string>
-    <string name="working_songs" msgid="2201491972050410684">"Canciones…"</string>
-    <string name="working_playlists" msgid="4424950806134653351">"Listas de reproducción…"</string>
-    <string name="loading" msgid="1991660396037155453">"Cargando..."</string>
+    <string name="working_artists" msgid="8678357432732156580">"Artistas\u2026"</string>
+    <string name="working_albums" msgid="8713273699401457426">"Álbumes\u2026"</string>
+    <string name="working_songs" msgid="2201491972050410684">"Canciones\u2026"</string>
+    <string name="working_playlists" msgid="4424950806134653351">"Listas de reproducción\u2026"</string>
+    <string name="loading" msgid="1991660396037155453">"Cargando\u2026"</string>
     <string name="sort_by_track" msgid="7662999005554152565">"Pistas"</string>
     <string name="sort_by_album" msgid="2912837715658975248">"Álbumes"</string>
     <string name="sort_by_artist" msgid="4607024967813199992">"Artistas"</string>
