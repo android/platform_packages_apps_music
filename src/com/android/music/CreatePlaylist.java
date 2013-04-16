@@ -40,6 +40,7 @@ public class CreatePlaylist extends Activity
     private EditText mPlaylist;
     private TextView mPrompt;
     private Button mSaveButton;
+    private static String orignName = null;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -73,6 +74,7 @@ public class CreatePlaylist extends Activity
         mPlaylist.setText(defaultname);
         mPlaylist.setSelection(defaultname.length());
         mPlaylist.addTextChangedListener(mTextWatcher);
+        orignName = this.getIntent().getStringExtra("orignName");
     }
     
     TextWatcher mTextWatcher = new TextWatcher() {
@@ -173,11 +175,16 @@ public class CreatePlaylist extends Activity
             String name = mPlaylist.getText().toString();
             if (name != null && name.length() > 0) {
                 ContentResolver resolver = getContentResolver();
+                boolean isCurrentPlayList = (name.equals(orignName) ? true:false);
                 int id = idForplaylist(name);
                 Uri uri;
                 if (id >= 0) {
-                    uri = ContentUris.withAppendedId(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI, id);
-                    MusicUtils.clearPlaylist(CreatePlaylist.this, id);
+                    if(isCurrentPlayList == false){
+                        uri = ContentUris.withAppendedId(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI, id);
+                        MusicUtils.clearPlaylist(CreatePlaylist.this, id);
+                    } else {
+                        uri = null;
+                    }
                 } else {
                     ContentValues values = new ContentValues(1);
                     values.put(MediaStore.Audio.Playlists.NAME, name);

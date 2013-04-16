@@ -101,6 +101,7 @@ public class TrackBrowserActivity extends ListActivity
     private static int mLastListPosFine = -1;
     private boolean mUseLastListPos = false;
     private ServiceToken mToken;
+    private String orignName = null;
 
     public TrackBrowserActivity()
     {
@@ -513,6 +514,7 @@ public class TrackBrowserActivity extends ListActivity
 
         if (fancyName != null) {
             setTitle(fancyName);
+            orignName = fancyName.toString();
         } else {
             setTitle(R.string.tracks_title);
         }
@@ -959,6 +961,7 @@ public class TrackBrowserActivity extends ListActivity
             case SAVE_AS_PLAYLIST:
                 intent = new Intent();
                 intent.setClass(this, CreatePlaylist.class);
+                intent.putExtra("orignName", orignName);
                 startActivityForResult(intent, SAVE_AS_PLAYLIST);
                 return true;
                 
