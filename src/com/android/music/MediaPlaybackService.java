@@ -1618,6 +1618,12 @@ public class MediaPlaybackService extends Service {
                 }
                 notifyChange(META_CHANGED);
             }
+            else{
+                //After remove a track which is next track, need set next track
+                if (first <= mNextPlayPos && mNextPlayPos <= last){
+                    setNextTrack();
+                }
+            }
             return last - first + 1;
         }
     }
