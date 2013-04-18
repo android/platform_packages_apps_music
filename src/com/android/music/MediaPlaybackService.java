@@ -557,6 +557,10 @@ public class MediaPlaybackService extends Service {
             mOpenFailedCounter = 20;
             mQuietMode = true;
             openCurrentAndNext();
+            if (mIsSupposedToBePlaying) {
+                mIsSupposedToBePlaying = false;
+                notifyChange(PLAYSTATE_CHANGED);
+            }
             mQuietMode = false;
             if (!mPlayer.isInitialized()) {
                 // couldn't restore the saved state
