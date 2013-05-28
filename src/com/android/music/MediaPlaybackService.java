@@ -525,6 +525,12 @@ public class MediaPlaybackService extends Service {
             }
             mPlayPos = pos;
             
+            int repmode = mPreferences.getInt("repeatmode", REPEAT_NONE);
+            if (repmode != REPEAT_ALL && repmode != REPEAT_CURRENT) {
+                repmode = REPEAT_NONE;
+            }
+            mRepeatMode = repmode;
+
             // When reloadQueue is called in response to a card-insertion,
             // we might not be able to query the media provider right away.
             // To deal with this, try querying for the current file, and if
@@ -574,12 +580,6 @@ public class MediaPlaybackService extends Service {
                     + position() + "/" + duration()
                     + " (requested " + seekpos + ")");
             
-            int repmode = mPreferences.getInt("repeatmode", REPEAT_NONE);
-            if (repmode != REPEAT_ALL && repmode != REPEAT_CURRENT) {
-                repmode = REPEAT_NONE;
-            }
-            mRepeatMode = repmode;
-
             int shufmode = mPreferences.getInt("shufflemode", SHUFFLE_NONE);
             if (shufmode != SHUFFLE_AUTO && shufmode != SHUFFLE_NORMAL) {
                 shufmode = SHUFFLE_NONE;
