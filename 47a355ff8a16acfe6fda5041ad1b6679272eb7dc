@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0a2cb179_5cb81d5d",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1704,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2013-06-28T19:38:11Z",
+      "side": 1,
+      "message": "please use spaces instead of tabs",
+      "revId": "47a355ff8a16acfe6fda5041ad1b6679272eb7dc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a2cb179_bc7919d8",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1705,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2013-06-28T19:38:11Z",
+      "side": 1,
+      "message": "I suspect you might actually want to use mPlayListLen instead of mPlayList.length, otherwise you could end up returning an invalid/uninitialized id.",
+      "revId": "47a355ff8a16acfe6fda5041ad1b6679272eb7dc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a2cb179_7cb5e161",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1706,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2013-06-28T19:38:11Z",
+      "side": 1,
+      "message": "don\u0027t indent empty lines",
+      "revId": "47a355ff8a16acfe6fda5041ad1b6679272eb7dc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
