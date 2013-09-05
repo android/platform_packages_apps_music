@@ -12,6 +12,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Copyright (c) 2013, NVIDIA CORPORATION.  All rights reserved.
  */
 
 package com.android.music;
@@ -53,6 +55,7 @@ import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.FileDescriptor;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -534,6 +537,8 @@ public class MediaPlaybackService extends Service {
                         MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
                         new String [] {"_id"}, "_id=" + mPlayList[mPlayPos] , null, null);
             if (crsr == null || crsr.getCount() == 0) {
+                if (crsr != null)
+                    crsr.close();
                 // wait a bit and try again
                 SystemClock.sleep(3000);
                 crsr = getContentResolver().query(
@@ -556,7 +561,9 @@ public class MediaPlaybackService extends Service {
             //   own, potentially at some random inconvenient time.
             mOpenFailedCounter = 20;
             mQuietMode = true;
-            openCurrentAndNext();
+            if (!isPlaying()) { // don't stop the song if it's playing
+                openCurrentAndNext();
+            }
             mQuietMode = false;
             if (!mPlayer.isInitialized()) {
                 // couldn't restore the saved state
@@ -565,11 +572,12 @@ public class MediaPlaybackService extends Service {
             }
             
             long seekpos = mPreferences.getLong("seekpos", 0);
-            seek(seekpos >= 0 && seekpos < duration() ? seekpos : 0);
-            Log.d(LOGTAG, "restored queue, currently at position "
+            if (position() <= 0) { // don't seek if we're in the middle of a song!
+                seek(seekpos >= 0 && seekpos < duration() ? seekpos : 0);
+                Log.d(LOGTAG, "restored queue, currently at position "
                     + position() + "/" + duration()
                     + " (requested " + seekpos + ")");
-            
+            }
             int repmode = mPreferences.getInt("repeatmode", REPEAT_NONE);
             if (repmode != REPEAT_ALL && repmode != REPEAT_CURRENT) {
                 repmode = REPEAT_NONE;
@@ -726,6 +734,27 @@ public class MediaPlaybackService extends Service {
         }
     };
 
+    private boolean isUriValid(String uri) {
+        ContentResolver cr = getContentResolver();
+        String[] projection = {MediaStore.MediaColumns.DATA};
+        Cursor cur = cr.query(Uri.parse(uri), projection, null, null, null);
+        if (cur == null)
+            return false;
+        if (cur.getCount() == 0) {
+            cur.close();
+            return false;
+        }
+        cur.moveToFirst();
+        String filePath = cur.getString(0);
+        Log.d(LOGTAG, "isUriValid: " + filePath);
+        cur.close();
+        if (new File(filePath).exists()){
+            return true;
+        }
+        return false;
+    }
+
+
     /**
      * Called when we receive a ACTION_MEDIA_EJECT notification.
      *
@@ -733,7 +762,9 @@ public class MediaPlaybackService extends Service {
      */
     public void closeExternalStorageFiles(String storagePath) {
         // stop playback and clean up if the SD card is going to be unmounted.
-        stop(true);
+        if (getPath() == null || isUriValid(getPath()) == false) {
+            stop(true);
+        }
         notifyChange(QUEUE_CHANGED);
         notifyChange(META_CHANGED);
     }
