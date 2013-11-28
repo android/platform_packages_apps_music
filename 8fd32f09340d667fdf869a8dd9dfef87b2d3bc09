@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "632006df_28558b15",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1624,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2013-11-28T18:28:12Z",
+      "side": 1,
+      "message": "mNextPlayPos might still not be updated correctly.\nFor example, assume a playlist with 10 tracks (0-9), currently playing track 7, so next track is 8.\nWhen removing track 2, mPlayPos is adjusted to 6 (line 1592 above), but this else block will never be entered, and so mNextPlayPos will continue to  be 8, instead of being adjusted to 7.\n\nI think either mNextPlayPos should also be updated above where mPlayPos is adjusted, or else setNextTrack should just always be called.",
+      "revId": "8fd32f09340d667fdf869a8dd9dfef87b2d3bc09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
