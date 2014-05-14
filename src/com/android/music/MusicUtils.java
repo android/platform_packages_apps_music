@@ -489,25 +489,10 @@ public class MusicUtils {
             } catch (RemoteException ex) {
             }
 
-            // step 2: remove selected tracks from the database
+            // step 2: remove selected tracks from the database,
+            // delete file operations is handled in media provider
             context.getContentResolver().delete(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, where.toString(), null);
 
-            // step 3: remove files from card
-            c.moveToFirst();
-            while (! c.isAfterLast()) {
-                String name = c.getString(1);
-                File f = new File(name);
-                try {  // File.delete can throw a security exception
-                    if (!f.delete()) {
-                        // I'm not sure if we'd ever get here (deletion would
-                        // have to fail, but no exception thrown)
-                        Log.e("MusicUtils", "Failed to delete file " + name);
-                    }
-                    c.moveToNext();
-                } catch (SecurityException ex) {
-                    c.moveToNext();
-                }
-            }
             c.close();
         }
 
