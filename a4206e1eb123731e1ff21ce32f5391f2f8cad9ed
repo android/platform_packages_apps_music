@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f1ab865_fffdaa1a",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-20T16:14:48Z",
+      "side": 1,
+      "message": "Can you remove this? Files in AOSP should have the AOSP copyright header, without any additions.",
+      "revId": "a4206e1eb123731e1ff21ce32f5391f2f8cad9ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f440856_cf38fd5b",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 564,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-20T16:14:48Z",
+      "side": 1,
+      "message": "should this call setNextTrack() when the song is playing, so that the next track gets (re)set correctly?",
+      "revId": "a4206e1eb123731e1ff21ce32f5391f2f8cad9ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f3a00c6_46c3d03e",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 742,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-20T16:14:48Z",
+      "side": 1,
+      "message": "Please use { } even for one-line if statements",
+      "revId": "a4206e1eb123731e1ff21ce32f5391f2f8cad9ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f1ab865_ffd6ca80",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 744,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-20T16:14:48Z",
+      "side": 1,
+      "message": "just use try/finally in this function so there\u0027s one place to close the cursor",
+      "revId": "a4206e1eb123731e1ff21ce32f5391f2f8cad9ed",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
