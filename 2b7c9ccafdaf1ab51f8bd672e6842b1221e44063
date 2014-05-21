@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f3504d1_d9c20416",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-21T15:09:03Z",
+      "side": 1,
+      "message": "\"never\" is a strong word. The cursor will eventually be garbage collected and finalized, at which point it will be closed, right?",
+      "revId": "2b7c9ccafdaf1ab51f8bd672e6842b1221e44063",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f3504d1_99cc7c4a",
+        "filename": "src/com/android/music/TrackBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1540,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-05-21T15:09:03Z",
+      "side": 1,
+      "message": "why only do this for a cursor of type NowPlayingCursor, but not for other types?",
+      "revId": "2b7c9ccafdaf1ab51f8bd672e6842b1221e44063",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
