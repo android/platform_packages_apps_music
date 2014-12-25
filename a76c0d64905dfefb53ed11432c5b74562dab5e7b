@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "418cf0b9_b10788be",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1961,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-12-25T00:06:39Z",
+      "side": 1,
+      "message": "should this be restored when playback is started again?",
+      "revId": "a76c0d64905dfefb53ed11432c5b74562dab5e7b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
