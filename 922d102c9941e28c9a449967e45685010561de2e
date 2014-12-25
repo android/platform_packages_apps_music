@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "618f34ae_c4b0d286",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1748,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2014-12-25T00:13:23Z",
+      "side": 1,
+      "message": "This doesn\u0027t actually check whether the cursor is empty (as the commit message says), but whether the current position is valid.\nIf the cursor really is empty, *both* conditions will be true, and so only one of them is necessary, but I\u0027d prefer to just use \"!mCursor.moveToFirst()\" instead.",
+      "revId": "922d102c9941e28c9a449967e45685010561de2e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
