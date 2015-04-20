@@ -792,6 +792,15 @@ public class TrackBrowserActivity extends ListActivity
         return super.dispatchKeyEvent(event);
     }
 
+    /*Sharing music to SMS,When exiting sms,music also quit*/
+    public boolean onKeyDown( int keyCode, KeyEvent event) {
+        if(keyCode==KeyEvent.KEYCODE_BACK && keyCode == KeyEvent.ACTION_UP){
+           finish();
+         }
+
+       return super.onKeyDown(keyCode, event);
+    }
+
     private void removeItem() {
         int curcount = mTrackCursor.getCount();
         int curpos = mTrackList.getSelectedItemPosition();
