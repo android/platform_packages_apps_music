@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2344a487_47d70460",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2016-06-06T23:09:21Z",
+      "side": 1,
+      "message": "deprecated",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 19
+      },
+      "revId": "b5c9e7566397fe50359dc51698dd7d189e9508c5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
