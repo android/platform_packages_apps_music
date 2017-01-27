@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "a43da7cc_11e70b39",
+        "filename": "src/com/android/music/MusicBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-01-27T01:38:05Z",
+      "side": 1,
+      "message": "Sure. Let\u0027s not show any explanation for now, as it is obvious that a Music player needs to access user\u0027s storage in order to play music from there.",
+      "range": {
+        "startLine": 44,
+        "startChar": 15,
+        "endLine": 44,
+        "endChar": 45
+      },
+      "revId": "b27c06b7a9876126f6e889125e2baebec713070e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c48e9d20_bdb81b7d",
         "filename": "src/com/android/music/MusicBrowserActivity.java",
         "patchSetId": 1
@@ -36,6 +59,29 @@
       "writtenOn": "2017-01-27T01:30:15Z",
       "side": 1,
       "message": "nit:\n\nIf the request is cancelled, the resulting array is empty.\n\nWe usually try to put the error condition first.  Could it be something like this?\n\nif (grantResults.length \u003d\u003d 0 ...\n    finish();\n    return;\n}\n\ninitApp();",
+      "range": {
+        "startLine": 101,
+        "startChar": 18,
+        "endLine": 101,
+        "endChar": 22
+      },
+      "revId": "b27c06b7a9876126f6e889125e2baebec713070e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c9f8044_9db9eedc",
+        "filename": "src/com/android/music/MusicBrowserActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-01-27T01:38:05Z",
+      "side": 1,
+      "message": "Done",
       "range": {
         "startLine": 101,
         "startChar": 18,
