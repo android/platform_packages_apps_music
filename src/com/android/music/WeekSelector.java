@@ -46,9 +46,9 @@ public class WeekSelector extends Activity {
         int pos = icicle != null ? icicle.getInt("numweeks", def - 1) : def - 1;
         mWeeks.setSelectedPos(pos);
 
-        ((Button) findViewById(R.id.set)).setOnClickListener(mListener);
+        findViewById(R.id.set).setOnClickListener(mListener);
 
-        ((Button) findViewById(R.id.cancel)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setResult(RESULT_CANCELED);
                 finish();
