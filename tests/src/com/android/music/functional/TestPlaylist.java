@@ -28,7 +28,6 @@ import android.provider.MediaStore;
 import android.content.ContentResolver;
 import android.database.Cursor;
 
-import com.android.music.CreatePlaylist;
 import com.android.music.MusicUtils;
 import com.android.music.PlaylistBrowserActivity;
 import com.android.music.TrackBrowserActivity;
@@ -71,8 +70,8 @@ public class TestPlaylist extends ActivityInstrumentationTestCase <PlaylistBrows
         Instrumentation inst = getInstrumentation();
         inst.sendStringSync(playlistname);
         Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
-        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);       
-        inst.invokeContextMenuAction(getActivity(), MusicUtils.Defs.CHILD_MENU_BASE + 1, 0);
+        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
+        inst.invokeContextMenuAction(getActivity(), 0 + 1, 0);
         Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
         clearSearchString(playlistname.length());
         
@@ -92,7 +91,7 @@ public class TestPlaylist extends ActivityInstrumentationTestCase <PlaylistBrows
         getActivity().startActivity(intent);     
         Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
         trackBrowserActivity = trackBrowserMon.waitForActivityWithTimeout(2000);
-        inst.invokeContextMenuAction(trackBrowserActivity, MusicUtils.Defs.NEW_PLAYLIST, 0);
+        inst.invokeContextMenuAction(trackBrowserActivity, 0, 0);
         Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
         //Remove the default playlist name
         clearSearchString(MusicPlayerNames.DEFAULT_PLAYLIST_LENGTH);
@@ -112,8 +111,8 @@ public class TestPlaylist extends ActivityInstrumentationTestCase <PlaylistBrows
         Instrumentation inst = getInstrumentation();
         inst.sendStringSync(oldPlaylistName);
         Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
-        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);       
-        inst.invokeContextMenuAction(getActivity(), MusicUtils.Defs.CHILD_MENU_BASE + 3, 0);
+        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
+        inst.invokeContextMenuAction(getActivity(), 0 + 3, 0);
         Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
         //Remove the old playlist name
         clearSearchString(oldPlaylistName.length());

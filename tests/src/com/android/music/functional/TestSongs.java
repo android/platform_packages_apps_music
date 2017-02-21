@@ -34,7 +34,6 @@ import android.content.Intent;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 
-import com.android.music.CreatePlaylist;
 import com.android.music.TrackBrowserActivity;
 import com.android.music.MusicUtils;
 
@@ -69,17 +68,17 @@ public class TestSongs extends ActivityInstrumentationTestCase <TrackBrowserActi
     public void addNewPlaylist() throws Exception{
       Instrumentation inst = getInstrumentation();      
       for (int i=0; i< MusicPlayerNames.NO_OF_PLAYLIST; i++){
-        inst.invokeContextMenuAction(getActivity(), MusicUtils.Defs.NEW_PLAYLIST, 0);
-        Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
-        //Remove the default playlist name
-        for (int j=0; j< MusicPlayerNames.DEFAULT_PLAYLIST_LENGTH; j++)
-          inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DEL);
-        inst.sendStringSync(MusicPlayerNames.unsortedPlaylistTitle[i]);
-        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
-        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_CENTER);
-        Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
-        inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
-        Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
+          inst.invokeContextMenuAction(getActivity(), 0, 0);
+          Thread.sleep(MusicPlayerNames.WAIT_SHORT_TIME);
+          // Remove the default playlist name
+          for (int j = 0; j < MusicPlayerNames.DEFAULT_PLAYLIST_LENGTH; j++)
+              inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DEL);
+          inst.sendStringSync(MusicPlayerNames.unsortedPlaylistTitle[i]);
+          inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
+          inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_CENTER);
+          Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
+          inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
+          Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
       }
     }
     
@@ -151,8 +150,8 @@ public class TestSongs extends ActivityInstrumentationTestCase <TrackBrowserActi
     @LargeTest
     public void testSetRingtone() throws Exception{
       Cursor mCursor;
-      Instrumentation inst = getInstrumentation();      
-      inst.invokeContextMenuAction(getActivity(), MusicUtils.Defs.USE_AS_RINGTONE, 0);
+      Instrumentation inst = getInstrumentation();
+      inst.invokeContextMenuAction(getActivity(), 0, 0);
       //This only check if there only 1 ringtone set in music player
       ContentResolver resolver = getActivity().getContentResolver();
       if (resolver == null) {
@@ -189,7 +188,7 @@ public class TestSongs extends ActivityInstrumentationTestCase <TrackBrowserActi
       Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
       inst.sendStringSync(MusicPlayerNames.TOBEDELETESONGNAME);
       Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
-      inst.invokeContextMenuAction(getActivity(), MusicUtils.Defs.DELETE_ITEM, 0);
+      inst.invokeContextMenuAction(getActivity(), 0, 0);
       inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_DOWN);
       inst.sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_CENTER);
       Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);

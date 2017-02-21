@@ -58,7 +58,7 @@ public class MusicPlaybackStress extends ActivityInstrumentationTestCase <TrackB
         Instrumentation inst = getInstrumentation();
         ActivityMonitor mediaPlaybackMon = inst.addMonitor("com.android.music.MediaPlaybackActivity", 
           null, false);
-        inst.invokeMenuActionSync(getActivity(), MusicUtils.Defs.CHILD_MENU_BASE + 3, 0);
+        inst.invokeMenuActionSync(getActivity(), 0 + 3, 0);
         Thread.sleep(MusicPlayerNames.WAIT_LONG_TIME);
         mediaPlaybackActivity = mediaPlaybackMon.waitForActivityWithTimeout(2000);
         for (int i=0;i< MusicPlayerNames.NO_SKIPPING_SONGS;i++){               
