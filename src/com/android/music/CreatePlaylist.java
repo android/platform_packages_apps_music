@@ -55,7 +55,7 @@ public class CreatePlaylist extends Activity {
         mSaveButton = (Button) findViewById(R.id.create);
         mSaveButton.setOnClickListener(mOpenClicked);
 
-        ((Button) findViewById(R.id.cancel)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 finish();
             }
@@ -85,33 +85,18 @@ public class CreatePlaylist extends Activity {
             } else {
                 mSaveButton.setEnabled(true);
                 // check if playlist with current name exists already, and warn the user if so.
-                if (idForplaylist(newText) >= 0) {
-                    mSaveButton.setText(R.string.create_playlist_overwrite_text);
-                } else {
-                    mSaveButton.setText(R.string.create_playlist_create_text);
-                }
+                //                if (idForplaylist(newText) >= 0) {
+                //                    mSaveButton.setText(R.string.create_playlist_overwrite_text);
+                //                } else {
+                //                    mSaveButton.setText(R.string.create_playlist_create_text);
+                //                }
             }
-        };
+        }
+
         public void afterTextChanged(Editable s) {
             // don't care about this one
         }
     };
-
-    private int idForplaylist(String name) {
-        Cursor c = MusicUtils.query(this, MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI,
-                new String[] {MediaStore.Audio.Playlists._ID},
-                MediaStore.Audio.Playlists.NAME + "=?", new String[] {name},
-                MediaStore.Audio.Playlists.NAME);
-        int id = -1;
-        if (c != null) {
-            c.moveToFirst();
-            if (!c.isAfterLast()) {
-                id = c.getInt(0);
-            }
-            c.close();
-        }
-        return id;
-    }
 
     @Override
     public void onSaveInstanceState(Bundle outcicle) {
@@ -167,17 +152,7 @@ public class CreatePlaylist extends Activity {
             String name = mPlaylist.getText().toString();
             if (name != null && name.length() > 0) {
                 ContentResolver resolver = getContentResolver();
-                int id = idForplaylist(name);
-                Uri uri;
-                if (id >= 0) {
-                    uri = ContentUris.withAppendedId(
-                            MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI, id);
-                    MusicUtils.clearPlaylist(CreatePlaylist.this, id);
-                } else {
-                    ContentValues values = new ContentValues(1);
-                    values.put(MediaStore.Audio.Playlists.NAME, name);
-                    uri = resolver.insert(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI, values);
-                }
+                Uri uri = new Uri.Builder().appendPath(name).build();
                 setResult(RESULT_OK, (new Intent()).setData(uri));
                 finish();
             }

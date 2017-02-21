@@ -56,7 +56,7 @@ public class RenamePlaylist extends Activity {
         mSaveButton = (Button) findViewById(R.id.create);
         mSaveButton.setOnClickListener(mOpenClicked);
 
-        ((Button) findViewById(R.id.cancel)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.cancel).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 finish();
             }
@@ -64,7 +64,8 @@ public class RenamePlaylist extends Activity {
 
         mRenameId =
                 icicle != null ? icicle.getLong("rename") : getIntent().getLongExtra("rename", -1);
-        mOriginalName = nameForId(mRenameId);
+        // TODO(siyuanh): Name to ID
+        mOriginalName = "haha";
         String defaultname = icicle != null ? icicle.getString("defaultname") : mOriginalName;
 
         if (mRenameId < 0 || mOriginalName == null || defaultname == null) {
@@ -95,7 +96,8 @@ public class RenamePlaylist extends Activity {
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             // check if playlist with current name exists already, and warn the user if so.
             setSaveButton();
-        };
+        }
+
         public void afterTextChanged(Editable s) {
             // don't care about this one
         }
@@ -107,44 +109,12 @@ public class RenamePlaylist extends Activity {
             mSaveButton.setEnabled(false);
         } else {
             mSaveButton.setEnabled(true);
-            if (idForplaylist(typedname) >= 0 && !mOriginalName.equals(typedname)) {
-                mSaveButton.setText(R.string.create_playlist_overwrite_text);
-            } else {
-                mSaveButton.setText(R.string.create_playlist_create_text);
-            }
+            //            if (idForplaylist(typedname) >= 0 && !mOriginalName.equals(typedname)) {
+            //                mSaveButton.setText(R.string.create_playlist_overwrite_text);
+            //            } else {
+            //                mSaveButton.setText(R.string.create_playlist_create_text);
+            //            }
         }
-    }
-
-    private int idForplaylist(String name) {
-        Cursor c = MusicUtils.query(this, MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI,
-                new String[] {MediaStore.Audio.Playlists._ID},
-                MediaStore.Audio.Playlists.NAME + "=?", new String[] {name},
-                MediaStore.Audio.Playlists.NAME);
-        int id = -1;
-        if (c != null) {
-            c.moveToFirst();
-            if (!c.isAfterLast()) {
-                id = c.getInt(0);
-            }
-        }
-        c.close();
-        return id;
-    }
-
-    private String nameForId(long id) {
-        Cursor c = MusicUtils.query(this, MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI,
-                new String[] {MediaStore.Audio.Playlists.NAME},
-                MediaStore.Audio.Playlists._ID + "=?", new String[] {Long.valueOf(id).toString()},
-                MediaStore.Audio.Playlists.NAME);
-        String name = null;
-        if (c != null) {
-            c.moveToFirst();
-            if (!c.isAfterLast()) {
-                name = c.getString(0);
-            }
-        }
-        c.close();
-        return name;
     }
 
     @Override

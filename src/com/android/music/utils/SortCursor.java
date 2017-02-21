@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.music;
+package com.android.music.utils;
 
 import android.database.AbstractCursor;
 import android.database.Cursor;
