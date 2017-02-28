@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "fde3dbb0_dac80ff5",
+        "filename": "src/com/android/music/CreatePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-02-28T22:19:03Z",
+      "side": 1,
+      "message": "Sure. Currently, playlist add, edit, delete features are temporarily disabled. I will remove this whole file in this patch.",
+      "parentUuid": "86eb560e_27c7cb87",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 35
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da51a2e8_b800d8ce",
         "filename": "src/com/android/music/MediaPlaybackActivity.java",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2017-02-28T21:18:17Z",
       "side": 1,
       "message": "Remove if not needed.",
+      "range": {
+        "startLine": 641,
+        "startChar": 1,
+        "endLine": 654,
+        "endChar": 19
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2df03dd_e3383d33",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 654,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-02-28T22:19:03Z",
+      "side": 1,
+      "message": "Shuffle is not implemented on this version yet. Will leave a note instead.",
+      "parentUuid": "da51a2e8_b800d8ce",
       "range": {
         "startLine": 641,
         "startChar": 1,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "81c39fea_af67eaf2",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-02-28T22:19:03Z",
+      "side": 1,
+      "message": "Removed this whole file instead.",
+      "parentUuid": "1a6f8399_2793beb5",
+      "range": {
+        "startLine": 67,
+        "startChar": 8,
+        "endLine": 67,
+        "endChar": 36
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b89467c3_18a2a646",
         "filename": "src/com/android/music/RenamePlaylist.java",
         "patchSetId": 2
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "c64d2117_6dac42f1",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-02-28T22:19:03Z",
+      "side": 1,
+      "message": "Nope :P",
+      "parentUuid": "b89467c3_18a2a646",
+      "range": {
+        "startLine": 68,
+        "startChar": 8,
+        "endLine": 68,
+        "endChar": 31
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a71da4fb_ada1ac84",
         "filename": "src/com/android/music/RenamePlaylist.java",
         "patchSetId": 2
@@ -105,6 +201,30 @@
       "writtenOn": "2017-02-28T21:18:17Z",
       "side": 1,
       "message": "Remove if not needed.",
+      "range": {
+        "startLine": 112,
+        "startChar": 0,
+        "endLine": 116,
+        "endChar": 27
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "385b1092_99bebb14",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-02-28T22:19:03Z",
+      "side": 1,
+      "message": "Removed the whole file",
+      "parentUuid": "a71da4fb_ada1ac84",
       "range": {
         "startLine": 112,
         "startChar": 0,
