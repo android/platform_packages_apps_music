@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "86eb560e_27c7cb87",
+        "filename": "src/com/android/music/CreatePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-02-28T21:18:17Z",
+      "side": 1,
+      "message": "If you don\u0027t need that code, then just remove it.",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 35
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da51a2e8_b800d8ce",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 654,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-02-28T21:18:17Z",
+      "side": 1,
+      "message": "Remove if not needed.",
+      "range": {
+        "startLine": 641,
+        "startChar": 1,
+        "endLine": 654,
+        "endChar": 19
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6f8399_2793beb5",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-02-28T21:18:17Z",
+      "side": 1,
+      "message": "TODO now or later?",
+      "range": {
+        "startLine": 67,
+        "startChar": 8,
+        "endLine": 67,
+        "endChar": 36
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b89467c3_18a2a646",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-02-28T21:18:17Z",
+      "side": 1,
+      "message": "Are you sure about that? :)",
+      "range": {
+        "startLine": 68,
+        "startChar": 8,
+        "endLine": 68,
+        "endChar": 31
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a71da4fb_ada1ac84",
+        "filename": "src/com/android/music/RenamePlaylist.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-02-28T21:18:17Z",
+      "side": 1,
+      "message": "Remove if not needed.",
+      "range": {
+        "startLine": 112,
+        "startChar": 0,
+        "endLine": 116,
+        "endChar": 27
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
