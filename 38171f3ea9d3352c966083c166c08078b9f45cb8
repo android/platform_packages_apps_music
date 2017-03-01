@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "af19162e_2d242663",
+        "filename": "tests/src/com/android/music/functional/TestPlaylist.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-01T01:11:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a4ae6c38_59c4cff9",
+      "range": {
+        "startLine": 77,
+        "startChar": 1,
+        "endLine": 77,
+        "endChar": 8
+      },
+      "revId": "38171f3ea9d3352c966083c166c08078b9f45cb8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a452e5da_3513cebf",
         "filename": "tests/src/com/android/music/functional/TestSongs.java",
         "patchSetId": 4
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "5f7468d8_fe281c96",
+        "filename": "tests/src/com/android/music/functional/TestSongs.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-01T01:11:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a452e5da_3513cebf",
+      "revId": "38171f3ea9d3352c966083c166c08078b9f45cb8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "31c20bd4_9b3cfe26",
         "filename": "tests/src/com/android/music/stress/MusicPlaybackStress.java",
         "patchSetId": 4
@@ -53,6 +95,30 @@
       "writtenOn": "2017-03-01T00:22:09Z",
       "side": 1,
       "message": "This file has several trailing spaces leftovers. Remove while here.",
+      "range": {
+        "startLine": 51,
+        "startChar": 24,
+        "endLine": 51,
+        "endChar": 34
+      },
+      "revId": "38171f3ea9d3352c966083c166c08078b9f45cb8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "902dec9c_67d39aa1",
+        "filename": "tests/src/com/android/music/stress/MusicPlaybackStress.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-01T01:11:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "31c20bd4_9b3cfe26",
       "range": {
         "startLine": 51,
         "startChar": 24,
