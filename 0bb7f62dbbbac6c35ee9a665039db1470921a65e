@@ -2,6 +2,98 @@
   "comments": [
     {
       "key": {
+        "uuid": "c2d18d83_109167d3",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "is this the right minsdk? do you really use APIs that are introduced in 24?",
+      "range": {
+        "startLine": 26,
+        "startChar": 37,
+        "endLine": 26,
+        "endChar": 40
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72aee059_bc8d891f",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "speling?",
+      "range": {
+        "startLine": 47,
+        "startChar": 23,
+        "endLine": 47,
+        "endChar": 32
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62d4b11f_610cb1e8",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "this should probably be a resource string, and you can probably call it \"Android Music\" or something similar.",
+      "range": {
+        "startLine": 154,
+        "startChar": 32,
+        "endLine": 154,
+        "endChar": 41
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "442fd817_bfd487d4",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "probably should be fixed to \"Android Music Player\" or similar.",
+      "range": {
+        "startLine": 317,
+        "startChar": 28,
+        "endLine": 317,
+        "endChar": 48
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "86eb560e_27c7cb87",
         "filename": "src/com/android/music/CreatePlaylist.java",
         "patchSetId": 2

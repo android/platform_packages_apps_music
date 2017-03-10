@@ -1,0 +1,234 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c9375450_6485b637",
+        "filename": "src/com/android/music/ArtistAlbumBrowserActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "the way this is used, it certainly looks like we\u0027re not using a lot of the functionality of the SimpleExpandableListAdapter.  Can we use a class that\u0027s simpler?  groupFrom and groupTo aren\u0027t being used at all. \n\nat the least, we should remove these parameters from the constructor since they\u0027re hard-coded and the adapter will just not work if you decide to put something else in here.\n\nat the best, MediaBrowserAdapter would be a pretty sweet example of how to make an adapter.",
+      "range": {
+        "startLine": 87,
+        "startChar": 26,
+        "endLine": 91,
+        "endChar": 83
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18702807_94d2129a",
+        "filename": "src/com/android/music/ArtistAlbumBrowserActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "this is ridiculously big for being inlined.  Please make it a separate class (even if only in this file)\n\nthe coupling between this and the ArtistAlbumListAdapter suggests that this should actually be inside that instead of on it\u0027s own.",
+      "range": {
+        "startLine": 137,
+        "startChar": 58,
+        "endLine": 139,
+        "endChar": 55
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dff2ddbc_470058a2",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 519,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "nit: I would do these in the opposite order.  the idea is \"de-initialize me before I do inherited things\"",
+      "range": {
+        "startLine": 518,
+        "startChar": 8,
+        "endLine": 519,
+        "endChar": 35
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "82c14a2d_d963bafe",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 642,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "consider removing shuffle functionality completely and adding a bug for it unless you are planning on revisiting this very soon.",
+      "range": {
+        "startLine": 638,
+        "startChar": 4,
+        "endLine": 642,
+        "endChar": 55
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc651e0b_1411c3e2",
+        "filename": "src/com/android/music/MediaPlaybackActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 707,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "can you group these together in the display tree and just set a single thing visible at once? (yes I realize this came from the old code but we\u0027re refactoring a lot of stuff)",
+      "range": {
+        "startLine": 705,
+        "startChar": 7,
+        "endLine": 707,
+        "endChar": 68
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6949bc5_721ced84",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "you can call onLoadChildren recursively here (since mMusicProvider will be initialized)",
+      "range": {
+        "startLine": 174,
+        "startChar": 24,
+        "endLine": 174,
+        "endChar": 40
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47913d4a_0639745e",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "there\u0027s not a reason for this to be a separate function. just return from the if() part of the on LoadChildren and make this the rest of that function.",
+      "range": {
+        "startLine": 191,
+        "startChar": 3,
+        "endLine": 191,
+        "endChar": 34
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21be6ccd_6acd8184",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 285,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "style: these don\u0027t need to be called impl",
+      "range": {
+        "startLine": 285,
+        "startChar": 32,
+        "endLine": 285,
+        "endChar": 37
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58ca919c_11c0633b",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "is duration guaranteed to be here?  if not, we\u0027re adding 0 as the duration..",
+      "range": {
+        "startLine": 292,
+        "startChar": 46,
+        "endLine": 292,
+        "endChar": 67
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a6ce2ae_f052c108",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 295,
+      "author": {
+        "id": 1073753
+      },
+      "writtenOn": "2017-03-10T03:41:03Z",
+      "side": 1,
+      "message": "is there a reason we\u0027re not just re-using the description that we\u0027re passed here?",
+      "range": {
+        "startLine": 295,
+        "startChar": 38,
+        "endLine": 295,
+        "endChar": 54
+      },
+      "revId": "4b44f8b321b5aa357fd402a4a782b7d0751f729f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
