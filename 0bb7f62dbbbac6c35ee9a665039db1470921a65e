@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9025ad51_dc29eb11",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-17T03:16:26Z",
+      "side": 1,
+      "message": "Switched to 19 KitKat",
+      "parentUuid": "c2d18d83_109167d3",
+      "range": {
+        "startLine": 26,
+        "startChar": 37,
+        "endLine": 26,
+        "endChar": 40
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "72aee059_bc8d891f",
         "filename": "AndroidManifest.xml",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2017-03-10T03:41:03Z",
       "side": 1,
       "message": "speling?",
+      "range": {
+        "startLine": 47,
+        "startChar": 23,
+        "endLine": 47,
+        "endChar": 32
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7e7acbea_29dfd06c",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-17T03:16:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72aee059_bc8d891f",
       "range": {
         "startLine": 47,
         "startChar": 23,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7e2e7b91_b2e4d04d",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-17T03:16:26Z",
+      "side": 1,
+      "message": "How about Android Open Source Music Player?",
+      "parentUuid": "62d4b11f_610cb1e8",
+      "range": {
+        "startLine": 154,
+        "startChar": 32,
+        "endLine": 154,
+        "endChar": 41
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "442fd817_bfd487d4",
         "filename": "res/values/strings.xml",
         "patchSetId": 2
@@ -82,6 +154,30 @@
       "writtenOn": "2017-03-10T03:41:03Z",
       "side": 1,
       "message": "probably should be fixed to \"Android Music Player\" or similar.",
+      "range": {
+        "startLine": 317,
+        "startChar": 28,
+        "endLine": 317,
+        "endChar": 48
+      },
+      "revId": "0bb7f62dbbbac6c35ee9a665039db1470921a65e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d9f7dc3_c4e83509",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2017-03-17T03:16:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "442fd817_bfd487d4",
       "range": {
         "startLine": 317,
         "startChar": 28,
