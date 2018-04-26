@@ -114,11 +114,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.android.music.TrackBrowserActivity" android:exported="false">
+        <activity android:name="com.android.music.TrackBrowserActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PICK"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="vnd.android.cursor.dir/track"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/audio"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:scheme="http"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/itunes"/>
             </intent-filter>
         </activity>
 
