@@ -656,11 +656,11 @@ public class MediaPlaybackActivity
 
     private long updateProgressBar() {
         MediaController mediaController = getMediaController();
-        if (mediaController == null) {
+        if (mediaController == null || mediaController.getMetadata() == null
+                || mediaController.getPlaybackState() == null) {
             return 500;
         }
-        long duration =
-                getMediaController().getMetadata().getLong(MediaMetadata.METADATA_KEY_DURATION);
+        long duration = mediaController.getMetadata().getLong(MediaMetadata.METADATA_KEY_DURATION);
         long pos = mediaController.getPlaybackState().getPosition();
         if ((pos >= 0) && (duration > 0)) {
             mCurrentTime.setText(MusicUtils.makeTimeString(this, pos / 1000));
