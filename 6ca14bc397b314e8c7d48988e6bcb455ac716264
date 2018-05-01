@@ -1,0 +1,9 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Jack He <siyuanh@google.com>
+Verified+1: Hansong Zhang <hsz@google.com>
+Autosubmit+1: Hansong Zhang <hsz@google.com>
+Submitted-by: android-build-prod (mdb) <android-build-team-robot@google.com>
+Submitted-at: Tue, 01 May 2018 23:51:35 +0000
+Reviewed-on: https://android-review.googlesource.com/673491
+Project: platform/packages/apps/Music
+Branch: refs/heads/master
