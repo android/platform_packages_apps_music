@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d8a470d_4c1cd138",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 429,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2018-05-22T08:21:17Z",
+      "side": 0,
+      "message": "Why would this condition no longer need to be checked?",
+      "range": {
+        "startLine": 429,
+        "startChar": 16,
+        "endLine": 429,
+        "endChar": 37
+      },
+      "revId": "4d977151a038963cfd934c1cba5885c40dd90b74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

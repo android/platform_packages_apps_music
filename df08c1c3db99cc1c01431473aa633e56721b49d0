@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f03e8b3f_8f0120f8",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 785,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2018-05-22T08:21:17Z",
+      "side": 1,
+      "message": "This empty line seems a bit redundant.",
+      "revId": "df08c1c3db99cc1c01431473aa633e56721b49d0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2c28e500_ecf7fa84",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 788,
+      "author": {
+        "id": 1121403
+      },
+      "writtenOn": "2018-05-22T08:21:17Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "df08c1c3db99cc1c01431473aa633e56721b49d0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
