@@ -22,6 +22,30 @@
       "revId": "4d977151a038963cfd934c1cba5885c40dd90b74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "30665887_3bcec3b1",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 429,
+      "author": {
+        "id": 1060852
+      },
+      "writtenOn": "2018-05-22T08:41:55Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "0d8a470d_4c1cd138",
+      "range": {
+        "startLine": 429,
+        "startChar": 16,
+        "endLine": 429,
+        "endChar": 37
+      },
+      "revId": "4d977151a038963cfd934c1cba5885c40dd90b74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

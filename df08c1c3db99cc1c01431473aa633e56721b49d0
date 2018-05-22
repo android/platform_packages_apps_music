@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8f582a99_db2a8b0c",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 785,
+      "author": {
+        "id": 1060852
+      },
+      "writtenOn": "2018-05-22T08:41:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f03e8b3f_8f0120f8",
+      "revId": "df08c1c3db99cc1c01431473aa633e56721b49d0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2c28e500_ecf7fa84",
         "filename": "src/com/android/music/MediaPlaybackService.java",
         "patchSetId": 2
@@ -33,6 +51,24 @@
       "revId": "df08c1c3db99cc1c01431473aa633e56721b49d0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ddab504a_c52b6936",
+        "filename": "src/com/android/music/MediaPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 788,
+      "author": {
+        "id": 1060852
+      },
+      "writtenOn": "2018-05-22T08:41:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2c28e500_ecf7fa84",
+      "revId": "df08c1c3db99cc1c01431473aa633e56721b49d0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
