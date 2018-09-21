@@ -5,6 +5,8 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
+LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v7-appcompat
+
 LOCAL_PACKAGE_NAME := Music
 
 LOCAL_SDK_VERSION := current
