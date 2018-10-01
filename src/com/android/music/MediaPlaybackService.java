@@ -77,7 +77,7 @@ public class MediaPlaybackService extends MediaBrowserService implements Playbac
 
     @Override
     public BrowserRoot onGetRoot(String clientPackageName, int clientUid, Bundle rootHints) {
-      return null;
+        return null;
     }
 
     @Override
@@ -123,5 +123,4 @@ public class MediaPlaybackService extends MediaBrowserService implements Playbac
      */
     @Override
     public void onError(String error) {}
-
 }
