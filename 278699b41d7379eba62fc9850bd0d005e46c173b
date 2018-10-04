@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f0633a43_88a9a68c",
+        "filename": "src/com/android/music/Playback.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2018-10-04T23:21:19Z",
+      "side": 1,
+      "message": "I don\u0027t see how the javadoc statement can be accurate and true.",
+      "revId": "278699b41d7379eba62fc9850bd0d005e46c173b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
