@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b0d3d370_546a0c66",
+        "filename": "src/com/android/music/MusicBrowserActivity.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2018-10-05T05:53:33Z",
+      "side": 1,
+      "message": "s/skelton/skeleton/",
+      "revId": "94de301c47585c5a6ce4daa90bcc3b93bfb74528",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
