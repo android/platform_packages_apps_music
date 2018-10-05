@@ -16,6 +16,24 @@
       "revId": "278699b41d7379eba62fc9850bd0d005e46c173b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a7e1c4f9_8bd9c810",
+        "filename": "src/com/android/music/Playback.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2018-10-05T00:58:26Z",
+      "side": 1,
+      "message": "This class is not needed for CTS tests to pass. Tested it by deleting this class. \n\n$ ./development/testrunner/runtest.py --path cts/tests/tests/content/src/android/content/cts/AvailableIntentsTest.java\n\nandroid.content.cts.AvailableIntentsTest:.................................\n\nTime: 0.279\n\nOK (33 tests)",
+      "parentUuid": "f0633a43_88a9a68c",
+      "revId": "278699b41d7379eba62fc9850bd0d005e46c173b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
