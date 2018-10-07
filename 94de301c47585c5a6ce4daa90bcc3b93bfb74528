@@ -16,6 +16,24 @@
       "revId": "94de301c47585c5a6ce4daa90bcc3b93bfb74528",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40de1100_41f5405f",
+        "filename": "src/com/android/music/MusicBrowserActivity.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2018-10-07T21:47:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b0d3d370_546a0c66",
+      "revId": "94de301c47585c5a6ce4daa90bcc3b93bfb74528",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
