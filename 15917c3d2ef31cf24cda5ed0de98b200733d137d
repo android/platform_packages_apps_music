@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "185266a8_6b5af120",
+        "filename": "src/com/android/music/MusicPicker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2019-05-30T22:14:01Z",
+      "side": 1,
+      "message": "2019 ?",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "15917c3d2ef31cf24cda5ed0de98b200733d137d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "45d96e4d_e85fe73f",
+        "filename": "src/com/android/music/MusicPicker.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1001525
+      },
+      "writtenOn": "2019-05-30T22:14:01Z",
+      "side": 1,
+      "message": "none of this seems to actually be true?",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 64,
+        "endChar": 3
+      },
+      "revId": "15917c3d2ef31cf24cda5ed0de98b200733d137d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
