@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3c81463f_e745ee70",
+        "filename": "kotlin/src/com/android/music/AudioPreview.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-05-19T22:16:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d5f2030_1d0d9522",
+      "range": {
+        "startLine": 2,
+        "startChar": 3,
+        "endLine": 2,
+        "endChar": 12
+      },
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "981ca91c_76ab35a4",
         "filename": "kotlin/src/com/android/music/MediaPlaybackService.kt",
         "patchSetId": 2
@@ -39,6 +63,24 @@
       "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6cfe0a6_bbde0f5c",
+        "filename": "kotlin/src/com/android/music/MediaPlaybackService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-05-19T22:16:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "981ca91c_76ab35a4",
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -62,6 +104,30 @@
       "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f29c6029_ab6b9b3c",
+        "filename": "kotlin/src/com/android/music/MusicPicker.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-05-19T22:16:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b55db2e8_cba5c4d1",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 6
+      },
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
