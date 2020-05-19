@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8d5f2030_1d0d9522",
+        "filename": "kotlin/src/com/android/music/AudioPreview.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-05-19T21:55:37Z",
+      "side": 1,
+      "message": "Change 2010 to 2020 in this file and all the new files that are added.",
+      "range": {
+        "startLine": 2,
+        "startChar": 3,
+        "endLine": 2,
+        "endChar": 12
+      },
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "981ca91c_76ab35a4",
+        "filename": "kotlin/src/com/android/music/MediaPlaybackService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-05-19T21:55:37Z",
+      "side": 1,
+      "message": "nit: Did the tool not add blank lines between functions? If so, no need to add extra blank line.\n\nhttps://developer.android.com/kotlin/style-guide\n\nA single blank line appears:\n\nBetween consecutive members of a class: properties, constructors, functions, nested classes, etc.",
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b55db2e8_cba5c4d1",
+        "filename": "kotlin/src/com/android/music/MusicPicker.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-05-19T21:55:37Z",
+      "side": 1,
+      "message": "Please delete unnecessary imports from this file and java file. Thanks.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 6
+      },
+      "revId": "e20ac19eb45726b9d0484ca9dca3693fb5a20e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
